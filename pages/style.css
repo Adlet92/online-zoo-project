@@ -17,8 +17,13 @@ body {
 }
 
 .header {
-  background: #ff7a00;
   padding: 15px 0;
+  position: absolute;
+  height: 110px;
+  left: 0px;
+  right: 0px;
+  background: #F58021;
+
 }
 
 .nav {
@@ -28,20 +33,78 @@ body {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 24px;
-  color: white;
+  position: absolute;
+  width: 96px;
+  height: 50px;
+  left: 260px;
+  top: 30px;
 }
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* MENU LINKS */
+/* .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.nav-social {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-social img {
+  width: 24px;
+  height: 24px;
+} */
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  position: absolute;
+  width: 556px;
+  height: 27px;
+  right: 505px;
+  top: 42px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
+  width: 60px;
+  height: 27px;
+  left: 117.25px;
+  top: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nav-social {
+  list-style: none;
+  display: flex;
+  width: 180px;
+  height: 42px;
+  left: 1480px;
+  top: 35px;
 }
 
 .hero {
@@ -157,7 +220,7 @@ body {
 
 .testimonials {
   padding: 60px 0;
-  background: #fff;
+  background-image: url("../assets/images/landing_page/panda2.png");
   text-align: center;
 }
 
@@ -169,9 +232,67 @@ body {
 }
 
 .testimonial-card {
-  background: #f0f0f0;
   padding: 20px;
   border-radius: 8px;
+}
+
+.care {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title.green {
+  color: #0aa58c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.care-subtitle {
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.care-big img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.care-card {
+  background: #2b0f4c;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.care-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.care-info {
+  padding: 15px;
+}
+
+.care-btn {
+  margin-top: 40px;
+}
+
+.care-video {
+  margin: 60px auto;
+}
+
+.care-video img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .footer {
