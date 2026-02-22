@@ -17,67 +17,30 @@ body {
 }
 
 .header {
-  padding: 15px 0;
-  position: absolute;
+  padding: 20px 0;
   height: 110px;
-  left: 0px;
-  right: 0px;
   background: #F58021;
-
 }
-
-.nav {
+.header-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-
 .logo {
-  position: absolute;
   width: 96px;
   height: 50px;
   left: 260px;
   top: 30px;
 }
-
-/* nav {
+.nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-} */
-
-/* MENU LINKS */
-/* .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+  gap: 40px;
 }
-
-.nav-links a {
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.nav-social {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-.nav-social img {
-  width: 24px;
-  height: 24px;
-} */
-
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
-  position: absolute;
+  gap: 30px;
   width: 556px;
   height: 27px;
   right: 505px;
@@ -101,10 +64,15 @@ body {
 .nav-social {
   list-style: none;
   display: flex;
+  gap: 15px;
   width: 180px;
   height: 42px;
   left: 1480px;
   top: 35px;
+}
+.nav-social img {
+  width: 40px;
+  height: 40px;
 }
 
 .hero {
