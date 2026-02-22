@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +62,10 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+.nav-links a:hover {
+  color: #00A092;
+}
+
 .nav-social {
   list-style: none;
   display: flex;
@@ -78,6 +83,14 @@ body {
 .hero {
   padding: 60px 0;
   background: #fff;
+
+  background-image:
+    linear-gradient(106deg, #ffffff 18%, rgba(255,255,255,0.65) 35%, rgba(255,255,255,0) 46%),
+    url("../assets/images/landing_page/Background.png");
+
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -87,23 +100,61 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #008c8c;
+  width: 890px;
+  height: 280px;
+  left: 260px;
+  top: 239px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 82px;
+  line-height: 100px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #00A092;
 }
-
-.hero-image img {
-  width: 100%;
-  max-width: 500px;
+.hero-text p {
+  width: 430px;
+  height: 76px;
+  left: 260px;
+  top: 569px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
 }
 
 .btn {
-  background: #ff7a00;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  gap: 10px;
+  width: 240px;
+  height: 74px;
+  left: calc(50% - 240px/2 - 580px);
+  top: calc(50% - 74px/2 + 282px);
+  background: #F58021;
+  border-radius: 5px;
+}
+.btn span {
+  width: 146px;
+  height: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.btn img {
+  width: 24.28px;
+  height: 22px;
 }
 
 .btn.small {
