@@ -124,6 +124,8 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .btn {
@@ -161,7 +163,32 @@ body {
   padding: 6px 12px;
   font-size: 14px;
 }
-
+.zoo-h2{
+  width: 523px;
+  height: 132px;
+  left: 260px;
+  top: 68px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #00A092;
+  margin-bottom: 40px;
+}
+.zoo-p{
+  width: 560px;
+  height: 213px;
+  left: 260px;
+  top: 250px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
 .welcome,
 .how-we-work {
   display: flex;
@@ -169,28 +196,122 @@ body {
   padding: 60px 0;
   align-items: center;
 }
-
-.welcome img,
-.how-we-work img {
-  width: 100%;
-  max-width: 400px;
+.welcome-image{
+  width: 800px;
+  height: 531px;
+  left: 860px;
+  top: 0px;
+  border-radius: 5px;
 }
-
+.how-image{
+  width: 800px;
+  height: 531px;
+  left: 260px;
+  top: 681px;
+  border-radius: 5px;
+}
 .donation {
-  background: #2b0f4c;
+  width: 1920px;
+  height: 221px;
+  left: 0px;
+  top: 1362px;
+  background: #20113D;
   color: white;
-  padding: 40px 0;
-  text-align: center;
+  padding: 50px 0;
+}
+.donation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-content h3 {
+  margin: 0;
 }
 
-.donate-form {
-  margin-top: 20px;
+.text-content p {
+  margin: 0;
 }
-
-.donate-form input {
-  padding: 10px;
-  width: 200px;
-  margin-right: 10px;
+.donation h3 {
+  width: 889px;
+  height: 51px;
+  left: 260px;
+  top: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  margin-right: 191px;
+}
+.donation p {
+  max-width: 609px;
+  height: 50px;
+  left: 261px;
+  top: 121px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.donate-form h4 {
+  width: 182px;
+  height: 34px;
+  left: 1340px;
+  top: 52px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.donate-input-group {
+  position: relative;
+  width: 320px;
+}
+.donate-input-group input {
+  width: 100%;
+  padding: 20px 70px 20px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.btn-donation {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  right: 0.2%;
+  transform: translateY(-50%);
+  background: #F58021;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.btn-donation img {
+  width: 20px;
 }
 
 .pets {
