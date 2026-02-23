@@ -320,24 +320,149 @@ body {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  margin-bottom: 136px;
+  height: 66px;
+  left: 651px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00A092;
+}
+.section-description {
+  margin-bottom: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+}
+.arrows {
+  margin-bottom: 50px;
+  gap: 55px;
 }
 
 .pet-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 .pet-card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: #2b184a;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: left;
+  color: white;
+  transition: 0.3s;
+  width: 478px;
 }
 
-.pet-card img {
+.pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+ .pet-img {
+  position: relative;
+}
+
+.pet-img img {
   width: 100%;
+  display: block;
+}
+
+.pet-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12.3891px 19.1468px;
+  gap: 10px;
+  position: absolute;
+  width: 134.29px;
+  height: 60.78px;
+  left: 0px;
+  top: 0px;
+  background: #20113D;
+  border-radius: 5px 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.pet-info {
+  padding: 18px;
+}
+
+.pet-info h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  height: 30px;
+  left: 135px;
+  right: 134px;
+  top: calc(50% - 30px/2 + 107.5px);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.pet-info p {
+  font-size: 14px;
+  opacity: 0.8;
   margin-bottom: 15px;
+  height: 39px;
+  left: 44px;
+  right: 45px;
+  top: calc(50% - 39px/2 + 161px);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn.small {
+  background: transparent;
+  border: none;
+  color: #F58021;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.273px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.btn-span {
+  color: #F58021;
+  white-space: nowrap;
+  width: 165px;
+  height: 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.273px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.btn.small:hover {
+  text-decoration: underline;
 }
 
 .pay-feed {
