@@ -716,20 +716,68 @@ body {
 .arrows-testimonials img:hover {
   transform: scale(1.1);
 }
+.btn-testimonials {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  gap: 10px;
+  width: 359px;
+  height: 74px;
+  left: calc(50% - 359px/2 - 519.5px);
+  top: calc(50% - 74px/2 + 701px);
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 236px;
+}
+.btn-testimonials-span {
+  width: 170px;
+  height: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 .care {
-  padding: 80px 0;
+  padding: 136px 0;
   text-align: center;
 }
 
 .section-title.green {
-  color: #0aa58c;
-  font-size: 32px;
-  margin-bottom: 10px;
+  width: 655px;
+  height: 132px;
+  left: 633px;
+  top: 136px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00A092;
+  margin-bottom: 50px;
 }
 
 .care-subtitle {
-  margin-bottom: 40px;
-  color: #666;
+  width: 537px;
+  height: 65px;
+  left: 692px;
+  top: 318px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #20113D;
+  margin-bottom: 100px;
 }
 
 .care-grid {
@@ -746,24 +794,58 @@ body {
 }
 
 .care-card {
-  background: #2b0f4c;
-  color: white;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 440px;
+  height: 658px;
+  left: 1220px;
+  top: 1181px;
+  background: #20113D;
+  border-radius: 5px;
 }
 
 .care-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  margin-bottom: 30px;
 }
 
-.care-info {
-  padding: 15px;
+.care-info p{
+  width: 390px;
+  height: 81px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
 }
-
-.care-btn {
-  margin-top: 40px;
+.btn-feed{
+  display: flex;
+  padding: 26px 45px;
+  gap: 10px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-feed-span{
+  width: 51px;
+  height: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #F58021;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.btn-feed img{
+  width: 24.28px;
+  height: 22px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .care-video {
