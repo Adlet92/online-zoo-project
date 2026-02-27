@@ -80,90 +80,60 @@ body {
   height: 40px;
 }
 
-.hero {
+.map {
   padding: 60px 0;
-  background: #fff;
-
-  background-image:
-    linear-gradient(106deg, #ffffff 18%, rgba(255,255,255,0.65) 35%, rgba(255,255,255,0) 46%),
-    url("../assets/images/landing_page/Background.png");
-
-  background-size: cover;
-  background-position: right center;
-  background-repeat: no-repeat;
+  text-align: center;
+}
+.map-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.map-img {
+  width: 100%;
+  display: block;
+}
+.animal {
+  position: absolute;
+  width: 100px;
+  transform: translate(-50%, -100%);
+  filter: drop-shadow(0px 4px 30px rgba(245,128,33,0.7));
 }
 
-.hero-content {
+.a1 { left: 15.7%; top: 62%;}
+.a2 { left: 24.3%; top: 61.4%;}
+.a3 { left: 44%; top: 66%; }
+.a4 { left: 52%; top: 69%; }
+.a5 { left: 60%; top: 83%; }
+.a6 { left: 75.5%; top: 72%; }
+.a7 { left: 85%; top: 84%; }
+.a8 { left: 71%; top: 54%; }
+
+
+.map-title{
   display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.hero-text h1 {
-  width: 890px;
-  height: 280px;
-  left: 260px;
-  top: 239px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 82px;
-  line-height: 100px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #00A092;
-}
-.hero-text p {
-  width: 430px;
-  height: 76px;
-  left: 260px;
-  top: 569px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: #000000;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.btn {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 26px 45px;
-  gap: 10px;
-  width: 240px;
-  height: 74px;
-  left: calc(50% - 240px/2 - 580px);
-  top: calc(50% - 74px/2 + 282px);
-  background: #F58021;
-  border-radius: 5px;
 }
-.hero-span {
-  width: 146px;
-  height: 22px;
+.section-title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  white-space: nowrap;
+  color: #20113D;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  width: 601px;
 }
-.btn img {
-  width: 24.28px;
-  height: 22px;
+.eagle {
+  position: absolute;
+  left: 21.77%;
+  right: 73.02%;
+  top: 42.88%;
+  bottom: 48.85%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
-
-.btn.small {
-  padding: 6px 12px;
-  font-size: 14px;
-}
-
 .footer {
   padding: 70px 0;
   width: 1920px;
