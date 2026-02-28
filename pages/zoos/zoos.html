@@ -5,14 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zoos</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="zoos_style.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
-        <img src="../assets/images/landing_page/Logo.png" alt="Logo" />
+        <a href="../../index.html" class="logo-link" title="Return to Home Page">
+          <img src="../../assets/images/landing_page/Logo.png" alt="Logo" />
+        </a>
       </div>
       <nav class="nav">
         <ul class="nav-links">
@@ -25,41 +27,77 @@
         <ul class="nav-social">
           <li>
             <a href="#">
-              <img src="../assets/images/landing_page/YouTube.png" alt="YouTube" />
+              <img src="../../assets/images/landing_page/YouTube.png" alt="YouTube" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="../assets/images/landing_page/Instagram.png" alt="Instagram" />
+              <img src="../../assets/images/landing_page/Instagram.png" alt="Instagram" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="../assets/images/landing_page/Facebook.png" alt="Facebook" />
+              <img src="../../assets/images/landing_page/Facebook.png" alt="Facebook" />
             </a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <section class="how-we-work container">
-    <div class="how-image">
-      <img src="../assets/images/landing_page/Eagles.png" alt="Eagles" />
+  <section class="live-section container">
+    <div class="live-layout">
+      <div class="zoo-sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        </div>
+        <div class="sidebar-list" id="sidebarList">
+          <button class="scroll-btn">▲</button>
+          <div class="animal"><img src="../../assets/images/zoos/sidebar_panda.png" /></div>
+          <div class="animal"><img src="../../assets/images/zoos/sidebar_eagle.png" /></div>
+          <div class="animal"><img src="../../assets/images/zoos/sidebar_gorilla.png" /></div>
+          <div class="animal"><img src="../../assets/images/zoos/sidebar_lemur.png" /></div>
+          <button class="scroll-btn">▼</button>
+        </div>
+      </div>
+  </section>
+  <section class="live container">
+    <div class="live-top">
+      <h1 class="live-title">LIVE PANDA CAMS</h1>
+      <button class="btn-orange">DONATE NOW →</button>
     </div>
-    <div class="how-text">
-      <h2 class="zoo-h2">How We Work</h2>
-      <p class="zoo-p">Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild
-        animals in our
-        zoo and worldwide. Every day, our experts work to safeguard the health and wellness of the animals. To continue
-        these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small,
-        go a long way to the conservation efforts of our pets.</p>
+
+    <div class="live-main">
+      <img src="../../assets/images/zoos/panda_big.png" alt="Panda Cam" />
+    </div>
+
+    <h3 class="more-title">MORE LIVE VIEWS</h3>
+
+    <div class="live-cams">
+      <button class="arrow">←</button>
+
+      <div class="cam active">
+        <img src="../../assets/images/zoos/cam1.png" />
+        <span>CAM 1</span>
+      </div>
+
+      <div class="cam">
+        <img src="../../assets/images/zoos/cam2.png" />
+        <span>CAM 2</span>
+      </div>
+
+      <div class="cam">
+        <img src="../../assets/images/zoos/cam3.png" />
+        <span>CAM 3</span>
+      </div>
+      <button class="arrow">→</button>
     </div>
   </section>
   <section class="donation">
     <div class="container donation-content">
       <div class="text-content">
         <h3>Your Donation Makes a Difference!</h3>
-        <p>The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your favourite
+        <p>The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your
+          favourite
           animals — live, 24/7!</p>
       </div>
       <div class="donate-form">
@@ -67,26 +105,48 @@
         <div class="donate-input-group">
           <input type="text" placeholder="$ Donation Amount" />
           <button class="btn-donation">
-            <img src="../assets/images/landing_page/Union.png" alt="Union" class="btn-union" />
+            <img src="../../assets/images/landing_page/Union.png" alt="Union" class="btn-union" />
           </button>
         </div>
       </div>
     </div>
   </section>
-  <section class="care-video container">
-    <img src="../assets/images/landing_page/Touch_the_animal.png" alt="Zoo Online Video" />
+  <section class="did container">
+    <h2 class="did-title">DID YOU KNOW?</h2>
+    <p class="did-text">
+      Pandas are often seen eating in a relaxed sitting posture...
+    </p>
+  </section>
+  <section class="animal-info container">
+    <div class="info-text">
+      <p><b>Common name:</b> Giant Panda</p>
+      <p><b>Scientific name:</b> Ailuropoda melanoleuca</p>
+      <p><b>Type:</b> Herbivore</p>
+      <p><b>Size:</b> 4 to 5 feet</p>
+      <p><b>Diet:</b> Omnivore</p>
+      <p><b>Habitat:</b> Forests</p>
+      <p><b>Range:</b> Eastern Asia <span class="link">VIEW MAP →</span></p>
+    </div>
+
+    <img src="../../assets/images/zoos/panda_small.png" class="info-img" />
+  </section>
+
+  <section class="animal-desc container">
+    <p>
+      Giant pandas are very unusual animals that eat almost exclusively bamboo...
+    </p>
   </section>
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-logos">
-        <img src="./assets/images/landing_page/zoo_logo_white.png" alt="Online Zoo" />
-        <img src="./assets/images/landing_page/Yem Digital.png" alt="Logo 2" />
-        <img src="./assets/images/landing_page/rs_school_js logo.png" alt="Logo 3" />
+        <img src="./../../assets/images/landing_page/zoo_logo_white.png" alt="Online Zoo" />
+        <img src="./../../assets/images/landing_page/Yem Digital.png" alt="Logo 2" />
+        <img src="./../../assets/images/landing_page/rs_school_js logo.png" alt="Logo 3" />
       </div>
       <nav class="footer-menu">
         <a href="#">ABOUT</a>
-        <a href="#">MAP</a>
-        <a href="#">ZOOS</a>
+        <a href="./pages/map/map.html">MAP</a>
+        <a href="./pages/zoos/zoos.html">ZOOS</a>
         <a href="#">CONTACT US</a>
       </nav>
       <div class="footer-btn">
@@ -99,13 +159,18 @@
         © 2021 DinaK &nbsp;&nbsp; © Yem Digital &nbsp;&nbsp; © RSSchool
       </div>
       <div class="footer-social">
-        <img src="./assets/images/landing_page/YouTube.png" alt="YouTube" />
-        <img src="./assets/images/landing_page/Instagram.png" alt="Instagram" />
-        <img src="./assets/images/landing_page/Facebook.png" alt="Facebook" />
+        <img src="./../../assets/images/landing_page/YouTube.png" alt="YouTube" />
+        <img src="./../../assets/images/landing_page/Instagram.png" alt="Instagram" />
+        <img src="./../../assets/images/landing_page/Facebook.png" alt="Facebook" />
       </div>
     </div>
   </footer>
 
 </body>
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("expanded");
+  }
+</script>
 
 </html>
