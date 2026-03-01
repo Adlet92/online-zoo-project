@@ -163,6 +163,10 @@ body {
   padding: 6px 12px;
   font-size: 14px;
 }
+.btn:hover, .feed-btn:hover {
+  background: #D26004;
+  box-shadow: 0px 4px 30px rgba(245, 128, 33, 0.3);
+}
 .zoo-h2{
   width: 523px;
   height: 132px;
@@ -564,10 +568,6 @@ body {
 
 }
 
-.feed-btn:hover {
-  background: #d96d18;
-}
-
 .testimonials {
   height: 1200px;
   padding: 60px 0;
@@ -744,6 +744,10 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.btn-testimonials:hover{
+  background: #00A092;
+  border: 1px solid #FFFFFF;
+}
 .care {
   padding: 136px 0;
   text-align: center;
@@ -870,6 +874,7 @@ body {
   border-radius: 5px;
   background-color: transparent;
   margin-top: 100px;
+  cursor: pointer;
 }
 .care-btn-span {
   width: 253px;
@@ -883,7 +888,19 @@ body {
   color: #20113D;
   white-space: nowrap;
 }
-
+.care-btn:hover{
+  background: #20113D;
+  border: 1px solid #FFFFFF;
+}
+.care-btn-span:hover {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 .care-video {
   margin-bottom: 150px;
 }
@@ -897,7 +914,7 @@ body {
 
 .footer {
   padding: 70px 0;
-  width: 1920px;
+  /* width: 1920px; */
   height: 329px;
   background: #20113D;
 }
