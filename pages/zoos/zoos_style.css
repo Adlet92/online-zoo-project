@@ -392,6 +392,32 @@ body {
   border-radius:8px;
 }
 
+.info-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 29.2833px 50.6826px;
+  gap: 11.26px;
+  width: 240px;
+  height: 74px;
+  left: calc(50% - 240px/2 + 119.5px);
+  top: calc(50% - 74px/2 + 154px);
+  border-radius: 6px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.info-btn:hover{
+  background: #F58021;
+  border-radius: 5px;
+}
+.info-btn:hover span{
+  color: #FFFFFF;
+}
+.info-btn:hover img{
+  filter: brightness(0) invert(1);
+}
+
 .link{
   color:#F58021;
   cursor:pointer;

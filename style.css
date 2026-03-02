@@ -409,6 +409,10 @@ body {
   white-space: nowrap;
 }
 .pet-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 18px;
 }
 
@@ -444,6 +448,35 @@ body {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+}
+.btn-pets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #F58021;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.273px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.btn-pets:hover{
+  background: #F58021;
+  border-radius: 5px;
+}
+.btn-pets:hover span{
+  color: #FFFFFF;
+}
+.btn-pets:hover img{
+  filter: brightness(0) invert(1);
 }
 .btn.small {
   background: transparent;
@@ -813,6 +846,12 @@ body {
   width: 100%;
   margin-bottom: 30px;
 }
+.care-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 .care-info p{
   width: 390px;
@@ -828,10 +867,13 @@ body {
 }
 .btn-feed{
   display: flex;
+  flex-direction: row;
   padding: 26px 45px;
   gap: 10px;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 5px;
+  height: 74px;
 }
 .btn-feed-span{
   width: 51px;
@@ -853,6 +895,15 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.btn-feed:hover{
+  background: #F58021;
+}
+.btn-feed:hover span{
+  color: #FFFFFF;
+}
+.btn-feed:hover img{
+  filter: brightness(0) invert(1);
 }
 .care-btn-container{
   display: flex;
@@ -892,7 +943,7 @@ body {
   background: #20113D;
   border: 1px solid #FFFFFF;
 }
-.care-btn-span:hover {
+.care-btn:hover span{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -901,10 +952,12 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.care-btn:hover img {
+  filter: brightness(0) invert(1);
+}
 .care-video {
   margin-bottom: 150px;
 }
-
 .care-video img {
   width: 1400px;
   height: 652px;
