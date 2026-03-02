@@ -594,11 +594,8 @@ body {
   gap: 10px;
   width: 240px;
   height: 74px;
-  left: calc(50% - 240px/2 + 140px);
-  top: calc(50% - 74px/2 + 965.5px);
   background: #F58021;
   border-radius: 5px;
-
 }
 
 .testimonials {

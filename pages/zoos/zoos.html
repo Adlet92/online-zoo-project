@@ -44,9 +44,9 @@
       </nav>
     </div>
   </header>
-  <section class="live-section container">
+  <!-- <section class="live-section container">
     <div class="live-layout">
-      <div class="zoo-sidebar" id="sidebar">
+      <aside class="zoo-sidebar" id="sidebar">
         <div class="sidebar-top">
           <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
         </div>
@@ -58,30 +58,55 @@
           <div class="animal"><img src="../../assets/images/zoos/sidebar_lemur.png" /></div>
           <button class="scroll-btn">▼</button>
         </div>
+      </aside>
+  </section> -->
+  <!-- <section class="live container"> -->
+  <section class="live">
+    <div class="zoo-sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
       </div>
-  </section>
-  <section class="live container">
-    <div class="live-top">
-      <h1 class="live-title">LIVE PANDA CAMS</h1>
-      <button class="btn-orange">DONATE NOW →</button>
+      <div class="sidebar-list" id="sidebarList">
+        <button class="scroll-btn">▲</button>
+        <div class="animal"><img src="../../assets/images/zoos/sidebar_panda.png" /></div>
+        <div class="animal"><img src="../../assets/images/zoos/sidebar_eagle.png" /></div>
+        <div class="animal"><img src="../../assets/images/zoos/sidebar_gorilla.png" /></div>
+        <div class="animal"><img src="../../assets/images/zoos/sidebar_lemur.png" /></div>
+        <button class="scroll-btn">▼</button>
+      </div>
     </div>
-    <div class="live-main">
-      <img src="../../assets/images/zoos/panda_big.png" alt="Panda Cam" />
-    </div>
-    <h3 class="more-title">MORE LIVE VIEWS</h3>
-    <div class="live-cams">
-      <button class="arrow">←</button>
-      <div class="cam active">
-        <img src="../../assets/images/zoos/cam1.png" />
+    <!-- <div class="live-layout container"> -->
+    <div class="live-layout container">
+      <div class="live-content">
+        <div class="live-top">
+          <h1 class="live-title">LIVE PANDA CAMS</h1>
+          <button class="feed-btn">
+            <span class="hero-span">DONATE NOW</span>
+            <img src="../../assets/images/landing_page/Union.png" alt="Union" />
+          </button>
+        </div>
+        <div class="live-main">
+          <img src="../../assets/images/zoos/panda_big.png" alt="Panda Cam" />
+        </div>
+        <h3 class="more-title">MORE LIVE VIEWS</h3>
+        <div class="live-cams">
+          <button class="arrow">
+            <img src="../../assets/images/zoos/left.png" alt="Left Arrow" />
+          </button>
+          <div class="cam active">
+            <img src="../../assets/images/zoos/cam1.png" />
+          </div>
+          <div class="cam">
+            <img src="../../assets/images/zoos/cam2.png" />
+          </div>
+          <div class="cam">
+            <img src="../../assets/images/zoos/cam3.png" />
+          </div>
+          <button class="arrow">
+            <img src="../../assets/images/zoos/right.png" alt="Right Arrow" />
+          </button>
+        </div>
       </div>
-      <div class="cam">
-        <img src="../../assets/images/zoos/cam2.png" />
-      </div>
-      <div class="cam">
-        <img src="../../assets/images/zoos/cam3.png" />
-      </div>
-      <button class="arrow">→</button>
-    </div>
   </section>
   <section class="donation">
     <div class="container donation-content">
