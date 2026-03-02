@@ -109,7 +109,52 @@ body {
 .zoo-sidebar.expanded{
   width:300px;
 }
+.sidebar-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.sidebar-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+.animal-text {
+  display: none;
+  color: white;
+  font-size: 14px;
+  margin-left: 15px;
+  max-width: 180px;
+}
 
+.zoo-sidebar.expanded .sidebar-item {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.zoo-sidebar.expanded .animal-text {
+  display: block;
+}
+.live-banner{
+  display: flex;
+  justify-content: flex-start;
+  width: 220px;
+  gap: 54px;
+}
+.live-banner-top{
+  height: 38px;
+}
+.expand-icon{
+  width: 16px;
+  height: 15px;
+}
 .sidebar-top{
   padding:20px 0;
 }
@@ -140,6 +185,7 @@ body {
   justify-content:center;
   align-items:center;
   cursor:pointer;
+  flex-shrink: 0;
 }
 
 .animal img{
@@ -164,14 +210,10 @@ body {
 }
 
 .live-top{
-  /* display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:54px 0 50px; */
   position: relative;
   display:flex;
   align-items:center;
-  justify-content:center; /* centers title */
+  justify-content:center;
   margin:54px 0 50px;
 }
 

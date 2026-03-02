@@ -319,7 +319,9 @@ body {
 .btn-donation img {
   width: 20px;
 }
-
+.btn-donation:hover{
+  background: #D26004;
+}
 .pets {
   padding: 60px 0;
   text-align: center;
@@ -359,9 +361,27 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-
+.arrow-right, .arrow-left{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  gap: 10px;
+  width: 65px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #20113D;
+  border-radius: 5px;
+}
+.arrow-right:hover, .arrow-left:hover{
+  background: #20113D;
+  border: 1px solid #20113D;
+  border-radius: 5px;
+}
 .arrows img:hover {
-  transform: scale(1.1);
+  filter: brightness(0) invert(1);
 }
 
 .pet-grid {
@@ -734,22 +754,31 @@ body {
   gap: 55px;
   margin-top: 60px;
 }
-.arrows-testimonials img {
-  width: 60px;
+
+.arrows-testimonials-left, .arrows-testimonials-right{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  gap: 10px;
+  width: 64.86px;
   height: 60px;
-  left: calc(50% - 60px/2 - 60px);
-  top: calc(50% - 60px/2);
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-  color: #FFFFFF;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.arrows-testimonials img {
-  cursor: pointer;
-  transition: 0.2s;
+
+.arrows-testimonials-left:hover, .arrows-testimonials-right:hover{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
 }
 .arrows-testimonials img:hover {
-  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(35%) saturate(2000%) hue-rotate(240deg);
 }
+
 .btn-testimonials {
   box-sizing: border-box;
   display: flex;
