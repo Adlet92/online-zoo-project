@@ -65,7 +65,9 @@ body {
 .nav-links a:hover {
   color: #00A092;
 }
-
+.nav-links a.active {
+  color: #00A092;
+}
 .nav-social {
   list-style: none;
   display: flex;
