@@ -142,6 +142,18 @@ body {
 }
 .zoo-sidebar.expanded .animal {
   margin-left: 15px;
+  background: transparent;
+}
+.zoo-sidebar.expanded .animal img {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(72%) saturate(653%) hue-rotate(346deg) brightness(99%) contrast(96%);
+}
+.zoo-sidebar.expanded .animal.active {
+  background: transparent;
+  border: 3px solid transparent;
+  box-shadow: none;
+}
+.zoo-sidebar.expanded .animal.active img {
+  filter: brightness(0) invert(1);
 }
 .live-banner{
   display: flex;
