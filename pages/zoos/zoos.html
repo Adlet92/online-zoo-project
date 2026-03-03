@@ -47,9 +47,9 @@
   <section class="live">
     <div class="zoo-sidebar" id="sidebar">
       <div class="live-banner">
-        <img src="../../assets/images/zoos/Live_badge.png" class="live-banner-top" />
+        <img src="../../assets/images/zoos/Live_badge_2.png" class="live-banner-top" />
         <button class="sidebar-toggle" onclick="toggleSidebar()">
-          <img src="../../assets/images/zoos/expand_icon.png" class="expand-icon" />
+          <img src="../../assets/images/zoos/expand_icon.png" class="expand-icon" id="toggleIcon" />
         </button>
       </div>
       <div class="sidebar-divider"></div>
@@ -201,7 +201,16 @@
 </body>
 <script>
   function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle("expanded");
+    const sidebar = document.getElementById("sidebar");
+    const icon = document.getElementById("toggleIcon");
+
+    sidebar.classList.toggle("expanded");
+
+    if (sidebar.classList.contains("expanded")) {
+      icon.src = "../../assets/images/zoos/close_icon.png";
+    } else {
+      icon.src = "../../assets/images/zoos/expand_icon.png";
+    }
   }
   function setActiveAnimal(element) {
     document.querySelectorAll('.sidebar-item').forEach(item => {
