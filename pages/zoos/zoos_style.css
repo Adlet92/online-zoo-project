@@ -187,6 +187,33 @@ body {
   cursor:pointer;
   flex-shrink: 0;
 }
+.animal.active {
+  background: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 0 6px #20113D, 0 0 0 11px #FFFFFF;
+}
+
+.animal.active::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #00A092;
+  border-radius: 2px;
+  top: -18px;
+  left: -18px;
+}
+
+.animal.active::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #00A092;
+  border-radius: 2px;
+  top: -18px;
+  right: -18px;
+}
 
 .animal img{
   width:60%;
