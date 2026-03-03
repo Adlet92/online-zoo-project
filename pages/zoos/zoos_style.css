@@ -354,7 +354,7 @@ body {
 .donation {
   /* width: 1920px; */
   width: 100%;
-  height: 221px;
+  /* height: 221px; */
   background: #20113D;
   color: white;
   padding: 50px 0;
@@ -378,10 +378,8 @@ body {
   margin: 0;
 }
 .donation h3 {
-  width: 707px;
+  width: 925px;
   height: 51px;
-  left: 260px;
-  top: 50px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -459,7 +457,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 1040px;
-  height: 269px;
   background: #FFFFFF;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -482,9 +479,6 @@ body {
 }
 .did-text {
   width: 919px;
-  height: 102px;
-  left: 60px;
-  top: 117px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
