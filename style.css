@@ -29,9 +29,7 @@ body {
 }
 .logo {
   width: 96px;
-  height: 50px;
-  left: 260px;
-  top: 30px;
+  height: auto;
 }
 .nav {
   display: flex;
@@ -42,18 +40,16 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
-  width: 556px;
+  /* width: 556px;
   height: 27px;
   right: 505px;
-  top: 42px;
+  top: 42px; */
 }
 
 .nav-links a {
   text-decoration: none;
-  width: 60px;
-  height: 27px;
-  left: 117.25px;
-  top: 0px;
+  /* width: 60px;
+  height: 27px; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -102,24 +98,23 @@ body {
 }
 
 .hero-text h1 {
-  width: 890px;
+  max-width: 890px;
   height: 280px;
-  left: 260px;
-  top: 239px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  font-size: 82px;
-  line-height: 100px;
+  font-size: clamp(42px, 6vw, 82px);
+  line-height: 1.2;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #00A092;
 }
 .hero-text p {
-  width: 430px;
+  max-width: 430px;
+  /* width: 430px;
   height: 76px;
   left: 260px;
-  top: 569px;
+  top: 569px; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -181,10 +176,10 @@ body {
   line-height: 66px;
   text-transform: uppercase;
   color: #00A092;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .zoo-p{
-  width: 560px;
+  max-width: 560px;
   height: 213px;
   left: 260px;
   top: 250px;
@@ -203,24 +198,22 @@ body {
   align-items: center;
 }
 .welcome-image{
-  width: 800px;
-  height: 531px;
-  left: 860px;
-  top: 0px;
+  width: 100%;
+  max-width: 800px;
+  /* height: 531px; */
   border-radius: 5px;
 }
 .how-image{
-  width: 800px;
-  height: 531px;
-  left: 260px;
-  top: 681px;
+  width: 100%;
+  max-width: 800px;
+  /* width: 800px;
+  height: 531px; */
   border-radius: 5px;
 }
 .donation {
-  width: 1920px;
-  height: 221px;
-  left: 0px;
-  top: 1362px;
+  /* width: 1920px;
+  height: 221px; */
+  width: 100%;
   background: #20113D;
   color: white;
   padding: 50px 0;
@@ -623,19 +616,26 @@ body {
 }
 
 .testimonials {
-  height: 1200px;
-  padding: 60px 0;
+  padding: 40px 0;
   background-image: url("../assets/images/landing_page/panda2.png");
   text-align: center;
-  width: 1920px;
-  height: 1776px;
+  width: 100%;
+  height: 1700px;
 }
-
+.testimonials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+.testimonials-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* THIS is important */
+}
 .testimonials h2 {
-  width: 440px;
-  height: 120px;
-  left: 260px;
-  top: 100px;
+  max-width: 440px;
+  /* height: 120px; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -649,9 +649,9 @@ body {
 
 .section-subhead {
   width: 560px;
-  height: 143px;
+  /* height: 143px;
   left: 260px;
-  top: 270px;
+  top: 270px; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -665,8 +665,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 600px;
-  margin: auto;
+  /* max-width: 600px;
+  margin: auto; */
 }
 
 .testimonial-card {
@@ -679,8 +679,8 @@ body {
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
-  width: 515px;
-  height: 463px;
+  width: 100%;
+  /* height: 463px; */
 }
 
 .testimonial-card:hover {
@@ -789,12 +789,10 @@ body {
   gap: 10px;
   width: 359px;
   height: 74px;
-  left: calc(50% - 359px/2 - 519.5px);
-  top: calc(50% - 74px/2 + 701px);
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   background-color: transparent;
-  margin-top: 236px;
+  margin-top: 370px;
 }
 .btn-testimonials-span {
   width: 170px;
@@ -814,6 +812,11 @@ body {
 .care {
   padding: 136px 0;
   text-align: center;
+}
+.care-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title.green {
@@ -864,10 +867,12 @@ body {
 }
 
 .care-card {
-  width: 440px;
-  height: 658px;
+  width: 100%;
+  max-width: 440px;
+  /* width: 440px; */
+  /* height: 658px;
   left: 1220px;
-  top: 1181px;
+  top: 1181px; */
   background: #20113D;
   border-radius: 5px;
 }
@@ -989,16 +994,16 @@ body {
   margin-bottom: 150px;
 }
 .care-video img {
-  width: 1400px;
-  height: 652px;
-  left: 260px;
-  top: 2163px;
+  /* width: 1400px;
+  height: 652px; */
+  width: 100%;
+  height: auto;
 }
 
 .footer {
   padding: 70px 0;
   /* width: 1920px; */
-  height: 329px;
+  /* height: 329px; */
   background: #20113D;
 }
 
@@ -1070,4 +1075,25 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .pet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .care-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .care-big {
+    grid-column: 1 / -1;
+  }
+  .welcome,
+  .how-we-work,
+  .step-body {
+    flex-direction: column;
+  }
+  .testimonials-wrapper {
+    flex-direction: column;
+  }
 }
