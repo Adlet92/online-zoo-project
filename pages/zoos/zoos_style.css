@@ -42,16 +42,16 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
-  width: 556px;
+  /* width: 556px;
   height: 27px;
   right: 505px;
-  top: 42px;
+  top: 42px; */
 }
 
 .nav-links a {
   text-decoration: none;
-  width: 60px;
-  height: 27px;
+  /* width: 60px;
+  height: 27px; */
   left: 117.25px;
   top: 0px;
   font-family: 'Montserrat';
@@ -314,9 +314,9 @@ body {
 }
 .donation-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 206px;
 }
 .text-content {
   display: flex;
@@ -483,14 +483,10 @@ body {
   width:320px;
   border-radius:8px;
 }
-
+.info-text a{
+  text-decoration: none;
+}
 .info-btn {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 29.2833px 50.6826px;
-  gap: 11.26px; */
   width: 240px;
   height: 74px;
   border-radius: 6px;
@@ -543,7 +539,7 @@ body {
 .footer {
   padding: 70px 0;
   /* width: 1920px; */
-  height: 329px;
+  /* height: 329px; */
   background: #20113D;
 }
 
