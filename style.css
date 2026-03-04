@@ -1615,6 +1615,7 @@ body.modal-open {
 .month-year-inputs{
   display: flex;
   gap: 40px;
+  align-items: end;
 }
 .select-display.month{
   width: 201px;

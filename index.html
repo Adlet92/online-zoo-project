@@ -330,7 +330,7 @@
       </div>
       <div class="feed-button-class">
         <button class="feed-btn">
-          <span class="hero-span">View Live Cam</span>
+          <span class="hero-span">Donate Now</span>
           <img src="../assets/images/landing_page/Union.png" alt="Union" />
         </button>
       </div>
@@ -688,22 +688,25 @@
             <div class="form-group">
               <label>
                 <span class="payment-label">*</span>
-                <span class="payment-avalue">CVV Number</span>
+                <span class="payment-value">CVV Number</span>
               </label>
               <input type="text" class="cvv-input" />
             </div>
           </div>
-          <label>
-            <span class="label">*</span>
-            <span class="value">Expiration Date</span>
-          </label>
           <div class="month-year-inputs">
-            <div class="select-display month">
-              <span class="value-step-3">Month</span>
-              <div class="arrow-choose">
-                <img src="./assets/images/popup/arrow_choose.png" alt="Arrow" />
+            <div class="month-wrapper">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-value">Expiration Date</span>
+              </label>
+              <div class="select-display month">
+                <span class="value-step-3">Month</span>
+                <div class="arrow-choose">
+                  <img src="./assets/images/popup/arrow_choose.png" alt="Arrow" />
+                </div>
               </div>
             </div>
+
             <div class="select-display year">
               <span class="placeholder">Year</span>
               <div class="arrow-choose">
@@ -757,8 +760,13 @@
   const overlay = document.getElementById("donationOverlay");
   const closeBtn = document.getElementById("popupClose");
   const donateTrigger = document.querySelector(".donate-form");
+  const donateForVol = document.querySelector(".btn-donate");
 
   donateTrigger.addEventListener("click", () => {
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  });
+  donateForVol.addEventListener("click", () => {
     overlay.classList.add("active");
     document.body.classList.add("no-scroll");
   });
@@ -800,17 +808,18 @@
 
   function showStep(index) {
     steps.forEach(step => step.classList.remove('active'));
-    indicators.forEach(dot => dot.classList.remove('active'));
-
     steps[index].classList.add('active');
-    if (indicators[index]) {
-      indicators[index].classList.add('active');
+    const currentDots = steps[index].querySelectorAll('.dot');
+    currentDots.forEach(dot => dot.classList.remove('active'));
+    for (let i = 0; i <= index; i++) {
+      if (currentDots[i]) {
+        currentDots[i].classList.add('active');
+      }
     }
 
     currentStep = index;
   }
 
-  // Next buttons
   document.querySelectorAll('.next-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       if (currentStep < steps.length - 1) {
@@ -819,7 +828,6 @@
     });
   });
 
-  // Back buttons
   document.querySelectorAll('.back-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       if (currentStep > 0) {
