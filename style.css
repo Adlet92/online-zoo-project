@@ -1084,6 +1084,138 @@ body {
   gap: 20px;
 }
 
+.donation-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+.donation-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.donation-popup {
+  background: #f2f2f2;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: scale(0.9);
+  transition: 0.3s ease;
+}
+
+.donation-overlay.active .donation-popup {
+  transform: scale(1);
+}
+
+.popup-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-image img {
+  width: 100%;
+  display: block;
+}
+
+.popup-content {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  /* color: #F58021;
+  font-size: 48px; */
+  margin-bottom: 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F58021;
+}
+
+.popup-content p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donation-amounts button {
+  background: #00A092;
+  border-radius: 5px;
+  padding: 26px 45px;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.donation-amounts button:hover {
+  background: #80CFC8;
+}
+
+.donation-amounts .other {
+  padding: 15px 45px;
+}
+
+
+@media (max-width: 768px) {
+  .popup-content h2 {
+    font-size: 32px;
+  }
+
+  .popup-content {
+    padding: 30px 20px;
+  }
+
+  .donation-amounts {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 1200px) {
   .pet-grid {
     grid-template-columns: repeat(3, 1fr);

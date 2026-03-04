@@ -521,13 +521,44 @@
       </div>
     </div>
   </footer>
+  <div class="donation-overlay" id="donationOverlay">
+    <div class="donation-popup">
 
+      <!-- <button class="popup-close" id="popupClose">×</button> -->
+      <button class="popup-close" id="popupClose">
+        <img src="./assets/images/popup/popup_close_button.png" alt="Close">
+      </button>
+
+      <div class="popup-image">
+        <img src="./assets/images/popup/popup_image.png" alt="Donate">
+      </div>
+
+      <div class="popup-content">
+        <h2>TOGETHER WE CARE,<br> SAVE AND PROTECT!</h2>
+
+        <p>
+          Your most generous gift not only cares for countless animals, but it also offers hope and a vital lifeline to
+          the world’s most endangered wildlife relying on us to survive.
+        </p>
+
+        <div class="donation-amounts">
+          <button>$20</button>
+          <button>$30</button>
+          <button>$50</button>
+          <button>$80</button>
+          <button>$100</button>
+          <button class="other">OTHER AMOUNT</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 <script>
   const grid = document.querySelector('.pet-grid');
   const btnRight = document.getElementById('petsRight');
   const btnLeft = document.getElementById('petsLeft');
-  const cardWidth = 478 + 25; // card + gap
+  const cardWidth = 478 + 25;
   let currentPosition = 0;
   const scrollAmount = 500;
 
@@ -543,6 +574,27 @@
       left: -scrollAmount,
       behavior: 'smooth'
     });
+  });
+
+  const overlay = document.getElementById("donationOverlay");
+  const closeBtn = document.getElementById("popupClose");
+  const donateTrigger = document.querySelector(".donate-form");
+
+  donateTrigger.addEventListener("click", () => {
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
   });
 </script>
 
