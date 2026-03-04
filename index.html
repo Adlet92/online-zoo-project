@@ -482,7 +482,6 @@
     <div class="care-btn-container">
       <button class="care-btn">
         <span class="care-btn-span">Choose Your Favourite</span>
-        <!-- <img src="../assets/images/landing_page/Union_black.png" alt="Union" /> -->
         <img src="./assets/images/landing_page/union_black_white.svg" alt="Union" />
       </button>
     </div>
@@ -523,8 +522,6 @@
   </footer>
   <div class="donation-overlay" id="donationOverlay">
     <div class="donation-popup">
-
-      <!-- <button class="popup-close" id="popupClose">×</button> -->
       <button class="popup-close" id="popupClose">
         <img src="./assets/images/popup/popup_close_button.png" alt="Close">
       </button>
@@ -550,7 +547,188 @@
           <button class="other">OTHER AMOUNT</button>
         </div>
       </div>
+    </div>
+  </div>
 
+
+  <div class="donation-overlay-steps" id="donationOverlaySteps">
+    <!-- <div class="donation-modal-steps"> -->
+    <div class="donation-step step-1 active">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Donation Information:</h3>
+        </div>
+        <div class="form-group">
+          <label class="choose-donation">* Choose your donation amount:</label>
+
+          <div class="amount-buttons">
+            <button>$10</button>
+            <button>$20</button>
+            <button>$30</button>
+            <button>$50</button>
+            <button>$80</button>
+            <button>$100</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button class="left-btn">OTHER AMOUNT</button>
+          <input type="number" class="right-input" />
+        </div>
+
+        <div class="form-row">
+          <button class="left-btn light">FOR SPECIAL PET</button>
+
+          <div class="custom-select">
+            <div class="select-display">
+              <span class="placeholder">Choose your favourite</span>
+              <div class="arrow-choose">
+                <img src="./assets/images/popup/arrow_choose.png" alt="Arrow" />
+              </div>
+            </div>
+            <div class="select-options hidden">
+              <div class="option">Lukas the Panda</div>
+              <div class="option">Andy the Lemur</div>
+              <div class="option">Glen the Gorilla</div>
+              <div class="option">Mike the Alligator</div>
+              <div class="option">Sam & Lora the eagles family</div>
+              <div class="option">Liz the Koala</div>
+              <div class="option">Shake the Lion</div>
+              <div class="option">Senja the Tiger</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" class="checkbox-container">
+          <span>Make this a monthly recurring gift</span>
+        </div>
+
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="next-btn">
+              <span>Next</span>
+              <img src="./assets/images/popup/arrow_next.png" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="donation-step step-2">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Billing Information:</h3>
+        </div>
+        <form class="contact-form">
+          <p><span class="label">*</span> <span class="value">Your Name</span></p>
+          <input type="text" placeholder="First and last name" />
+
+          <p><span class="label">*</span> <span class="value">Your Email Address</span></p>
+          <input type="email" placeholder="Enter your email" />
+          <div class="second-step-text">
+            <span>
+              You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
+              translations. You can unsubscribe at any time.
+            </span>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="back-btn">
+              <span>Back</span>
+            </button>
+            <button class="next-btn">
+              <span>Next</span>
+              <img src="./assets/images/popup/arrow_next.png" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STEP 3 -->
+    <div class="donation-step step-3">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Payment Information:</h3>
+        </div>
+        <div class="payment-form">
+          <div class="card-row">
+            <div class="form-group">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-avalue">Card Number</span>
+              </label>
+              <input type="text" class="card-input" />
+            </div>
+
+            <div class="form-group">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-avalue">CVV Number</span>
+              </label>
+              <input type="text" class="cvv-input" />
+            </div>
+          </div>
+          <label>
+            <span class="label">*</span>
+            <span class="value">Expiration Date</span>
+          </label>
+          <div class="month-year-inputs">
+            <div class="select-display month">
+              <span class="value-step-3">Month</span>
+              <div class="arrow-choose">
+                <img src="./assets/images/popup/arrow_choose.png" alt="Arrow" />
+              </div>
+            </div>
+            <div class="select-display year">
+              <span class="placeholder">Year</span>
+              <div class="arrow-choose">
+                <img src="./assets/images/popup/arrow_choose.png" alt="Arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="back-btn">
+              <span>Back</span>
+            </button>
+            <button class="next-btn-step-3">
+              <span>Complete Donation</span>
+              <img src="./assets/images/popup/arrow_next.png" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
@@ -596,6 +774,77 @@
       document.body.classList.remove("no-scroll");
     }
   });
+
+  // Second Modal (Steps)
+  const overlaySteps = document.getElementById("donationOverlaySteps");
+  const feedBtns = document.querySelectorAll('.feed-btn');
+  const steps = document.querySelectorAll('.donation-step');
+  const indicators = document.querySelectorAll('.steps-indicator .dot');
+
+  let currentStep = 0;
+
+  feedBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      overlaySteps.classList.add('active');
+      document.body.classList.add('modal-open');
+      showStep(0);
+    });
+  });
+
+  overlaySteps.addEventListener('click', (e) => {
+    if (e.target === overlaySteps) {
+      overlaySteps.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+  });
+
+  function showStep(index) {
+    steps.forEach(step => step.classList.remove('active'));
+    indicators.forEach(dot => dot.classList.remove('active'));
+
+    steps[index].classList.add('active');
+    if (indicators[index]) {
+      indicators[index].classList.add('active');
+    }
+
+    currentStep = index;
+  }
+
+  // Next buttons
+  document.querySelectorAll('.next-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep < steps.length - 1) {
+        showStep(currentStep + 1);
+      }
+    });
+  });
+
+  // Back buttons
+  document.querySelectorAll('.back-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 0) {
+        showStep(currentStep - 1);
+      }
+    });
+  });
+
+
+  // const dropdownToggle = document.querySelector('.dropdown-toggle');
+  // const dropdownMenu = document.querySelector('.dropdown-menu');
+  // const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+  // dropdownToggle.addEventListener('click', () => {
+  //   dropdownMenu.classList.toggle('hidden');
+  // });
+
+  // dropdownItems.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     dropdownItems.forEach(i => i.classList.remove('active'));
+  //     item.classList.add('active');
+  //     dropdownToggle.textContent = item.textContent;
+  //     dropdownMenu.classList.add('hidden');
+  //   });
+  // });
 </script>
 
 </html>
