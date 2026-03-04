@@ -1007,8 +1007,6 @@ body {
 
 .footer {
   padding: 70px 0;
-  /* width: 1920px; */
-  /* height: 329px; */
   background: #20113D;
 }
 
@@ -1042,7 +1040,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
+.footer-menu a:hover {
+  color: #00A092;
+}
 .footer-btn {
   display: flex;
   justify-content: flex-end;
@@ -1688,6 +1688,9 @@ body.modal-open {
   line-height: 150%;
   color: #969696;
   padding: 20px 16px 17px;
+}
+.care-card-a {
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .popup-content h2 {
