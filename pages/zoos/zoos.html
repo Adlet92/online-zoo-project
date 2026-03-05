@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../../assets/images/landing_page/Favicon.png">
+  <link rel="stylesheet" href="zoos_style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h1 class="visually-hidden">Zoos</h1>
+        <a href="../../index.html" class="logo-link" title="Return to Home Page">
+          <img src="../../assets/images/landing_page/Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="../../index.html">About</a></li>
+          <li><a href="../../pages/map/map.html">Map</a></li>
+          <li><a href="../zoos/zoos.html" class="active">Zoos</a></li>
+          <li><a href="../../pages/contact_us/contact.html">Contact Us</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+        <ul class="nav-social">
+          <li>
+            <a href="#">
+              <img src="../../assets/images/landing_page/YouTube.png" alt="YouTube" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../../assets/images/landing_page/Instagram.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../../assets/images/landing_page/Facebook.png" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="live">
+    <div class="zoo-sidebar" id="sidebar">
+      <div class="live-banner">
+        <img src="../../assets/images/zoos/Live_badge_2.png" class="live-banner-top" />
+        <button class="sidebar-toggle" onclick="toggleSidebar()">
+          <img src="../../assets/images/zoos/expand_icon.png" class="expand-icon" id="toggleIcon" />
+        </button>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-list" id="sidebarList">
+        <a href="#" class="sidebar-item-decoration">
+          <div class="sidebar-item" onclick="setActiveAnimal(this)">
+            <div class="animal active"><img src="../../assets/images/zoos/sidebar_panda.png" /></div>
+            <div class="animal-text">Watch live from China's Panda Center</div>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a href="../../pages/zoos/eagle.html" class="sidebar-item-decoration">
+          <div class="sidebar-item" onclick="setActiveAnimal(this)">
+            <div class="animal"><img src="../../assets/images/zoos/sidebar_eagle.png" /></div>
+            <div class="animal-text">Watch The Bald Eagles Nest from West End cam</div>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a href="../../pages/zoos/gorilla.html" class="sidebar-item-decoration">
+          <div class="sidebar-item" onclick="setActiveAnimal(this)">
+            <div class="animal"><img src="../../assets/images/zoos/sidebar_gorilla.png" /></div>
+            <div class="animal-text">Livestream from Gorilla Forest Corridor habitat cam</div>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a href="../../pages/zoos/lemur.html" class="sidebar-item-decoration">
+          <div class="sidebar-item" onclick="setActiveAnimal(this)">
+            <div class="animal"><img src="../../assets/images/zoos/sidebar_lemur.png" /></div>
+            <div class="animal-text">The ring-tailed lemurs play in Madagascar, Lemuria Land</div>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <button class="scroll-btn">▼</button>
+      </div>
+    </div>
+    <div class="live-layout container">
+      <div class="live-content">
+        <div class="live-top">
+          <h1 class="live-title">LIVE PANDA CAMS</h1>
+          <button class="feed-btn">
+            <span class="hero-span">DONATE NOW</span>
+            <img src="../../assets/images/landing_page/Union.png" alt="Union" />
+          </button>
+        </div>
+        <div class="live-main">
+          <img src="../../assets/images/zoos/panda_big.png" alt="Panda Cam" />
+        </div>
+        <h3 class="more-title">MORE LIVE VIEWS</h3>
+        <div class="live-cams">
+          <button class="arrow">
+            <img src="../../assets/images/zoos/left.png" alt="Left Arrow" />
+          </button>
+          <div class="cam active">
+            <img src="../../assets/images/zoos/cam1.png" />
+          </div>
+          <div class="cam">
+            <img src="../../assets/images/zoos/cam2.png" />
+          </div>
+          <div class="cam">
+            <img src="../../assets/images/zoos/cam3.png" />
+          </div>
+          <button class="arrow">
+            <img src="../../assets/images/zoos/right.png" alt="Right Arrow" />
+          </button>
+        </div>
+      </div>
+  </section>
+  <section class="donation">
+    <div class="container donation-content">
+      <div class="text-content">
+        <h3>make the Bamboo Donation!</h3>
+        <p>Our process for bamboo donations first starts with a site evaluation. It is important that our team sees
+          where the bamboo is growing, then determining if the bamboo is a species that our animals are currently
+          eating. Thank you for your interest in donating bamboo for our pandas.</p>
+      </div>
+      <div class="donate-form">
+        <h4>Quick donate</h4>
+        <div class="donate-input-group">
+          <input type="text" placeholder="$ Donation Amount" />
+          <button class="btn-donation">
+            <img src="../../assets/images/landing_page/Union.png" alt="Union" class="btn-union" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="did container">
+    <h2 class="did-title">DID YOU KNOW?</h2>
+    <p class="did-text">
+      Pandas are often seen eating in a relaxed sitting posture, with their hind legs stretched out before them. They
+      may appear sedentary, but they are skilled tree-climbers and efficient swimmers.
+    </p>
+  </section>
+  <section class="animal-info container">
+    <div class="info-text">
+      <p><span class="label">Common name:</span> <span class="value">Giant Panda</span></p>
+      <p><span class="label">Scientific name:</span> <span class="value">Ailuropoda melanoleuca</span></p>
+      <p><span class="label">Type:</span> <span class="value">Herbivore</span></p>
+      <p><span class="label">Size:</span> <span class="value">4 to 5 feet</span></p>
+      <p><span class="label">Diet:</span> <span class="value">Omnivore</span></p>
+      <p><span class="label">Habitat:</span> <span class="value">Forests</span></p>
+      <p>
+        <span class="label">Range:</span>
+        <span class="value">Eastern Asia</span>
+        <a href="../map/map.html">
+          <button class="info-btn">
+            <span class="info-span">VIEW MAP</span>
+            <img src="../../assets/images/landing_page/union_orange_white.svg" alt="Union" />
+          </button>
+        </a>
+    </div>
+
+    <img src="../../assets/images/zoos/panda_small.png" class="info-img" />
+  </section>
+
+  <section class="animal-desc container">
+    <p>
+      Giant pandas are very unusual animals that eat almost exclusively bamboo, which is very low in nutrients. Because
+      of this, they have many unique adaptations for their low-energy lifestyle. Giant pandas are solitary. They have a
+      highly developed sense of smell that males use to avoid each other and to find females for mating in the spring.
+      After a five-month pregnancy, females give birth to a cub or two, though they cannot care for both twins. The
+      blind infants weigh only 5 ounces at birth and cannot crawl until they reach three months of age. They are born
+      white, and develop their much loved coloring later. Habitat loss is the primary threat to this species. Its
+      popularity around the world has helped the giant panda become the focus of successful conservation programs.
+    </p>
+  </section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logos">
+        <img src="./../../assets/images/landing_page/zoo_logo_white.png" alt="Online Zoo" />
+        <img src="./../../assets/images/landing_page/Yem Digital.png" alt="Logo 2" />
+        <img src="./../../assets/images/landing_page/rs_school_js logo.png" alt="Logo 3" />
+      </div>
+      <nav class="footer-menu">
+        <a href="../../index.html">ABOUT</a>
+        <a href="../../pages/map/map.html">MAP</a>
+        <a href="../../pages/zoos/zoos.html">ZOOS</a>
+        <a href="../../pages/contact_us/contact.html">CONTACT US</a>
+      </nav>
+      <div class="footer-btn">
+        <button class="btn-donate">
+          DONATE FOR VOLUNTEERS →
+        </button>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-copy">
+        © 2021 DinaK &nbsp;&nbsp; © Yem Digital &nbsp;&nbsp; © RSSchool
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <img src="../../assets/images/landing_page/YouTube.png" alt="YouTube" />
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="../../assets/images/landing_page/Instagram.png" alt="Instagram" />
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <img src="../../assets/images/landing_page/Facebook.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const icon = document.getElementById("toggleIcon");
+
+    sidebar.classList.toggle("expanded");
+
+    if (sidebar.classList.contains("expanded")) {
+      icon.src = "../../assets/images/zoos/close_icon.png";
+    } else {
+      icon.src = "../../assets/images/zoos/expand_icon.png";
+    }
+  }
+  function setActiveAnimal(element) {
+    document.querySelectorAll('.sidebar-item').forEach(item => {
+      item.classList.remove('active');
+      item.querySelector('.animal').classList.remove('active');
+    });
+    element.classList.add('active');
+    element.querySelector('.animal').classList.add('active');
+  }
+</script>
+
+</html>
