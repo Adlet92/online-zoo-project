@@ -16,7 +16,16 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
 .header {
   padding: 20px 0;
   height: 110px;
@@ -100,7 +109,7 @@ body {
   gap: 40px;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   max-width: 890px;
   height: 280px;
   font-family: 'Montserrat';
