@@ -1,4 +1,4 @@
-import { FeedbackResponse, PetsResponse } from "../types/api"
+import { CameraResponse, FeedbackResponse, PetsResponse } from "../types/api"
 
 const BASE_URL = "https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod"
 
@@ -22,4 +22,13 @@ export async function getFeedback(): Promise<FeedbackResponse> {
 
   const data: FeedbackResponse = await response.json()
   return data
+}
+export async function getCameras(): Promise<CameraResponse> {
+  const response = await fetch(`${BASE_URL}/cameras`)
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch cameras")
+  }
+
+  return response.json()
 }

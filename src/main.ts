@@ -1,6 +1,7 @@
-import { getFeedback, getPets } from "./api/api"
+import { getCameras, getFeedback, getPets } from "./api/api"
 import { createFeedbackCard } from "./render/createFeedbackCard"
 import { createPetCard } from "./render/createPetCard"
+import { createSidebarItem } from "./render/createSidebarItem"
 import { Slider } from "./slider/slider"
 
 async function init(): Promise<void> {
@@ -60,5 +61,32 @@ async function loadFeedback(): Promise<void> {
       `<div class="api-error">Something went wrong. Please, refresh the page</div>`
   }
 }
+
+async function loadSidebar(): Promise<void> {
+
+  const container = document.getElementById("sidebarList")
+
+  if (!container) return
+
+  try {
+
+    const response = await getCameras()
+
+    container.innerHTML = ""
+
+    response.data.forEach(camera => {
+      const element = createSidebarItem(camera)
+      container.appendChild(element)
+    })
+
+  } catch {
+
+    container.innerHTML =
+      `<div class="api-error">Something went wrong. Please refresh the page</div>`
+
+  }
+}
+
+loadSidebar()
 
 document.addEventListener("DOMContentLoaded", init)
