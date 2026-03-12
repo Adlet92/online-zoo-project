@@ -7,23 +7,6 @@ async function init(): Promise<void> {
   loadPets()
   loadFeedback()
 }
-
-// async function loadPets(): Promise<void> {
-//   const container = document.getElementById("petsContainer")
-
-//   try {
-//     const petsResponse = await getPets()
-//     renderPets(petsResponse.data)
-//   } catch (error) {
-//     if (container) {
-//       container.innerHTML = `
-//         <div class="api-error">
-//           Something went wrong. Please, refresh the page
-//         </div>
-//       `
-//     }
-//   }
-// }
 async function loadPets(): Promise<void> {
   const container = document.getElementById("petsContainer")
 
@@ -36,7 +19,7 @@ async function loadPets(): Promise<void> {
       petsResponse.data,
       container,
       createPetCard,
-      3
+      8
     )
 
     const left = document.getElementById("petsLeft")
@@ -51,22 +34,6 @@ async function loadPets(): Promise<void> {
   }
 }
 
-// async function loadFeedback(): Promise<void> {
-//   const container = document.getElementById("testimonialsContainer")
-
-//   try {
-//     const feedbackResponse = await getFeedback()
-//     renderFeedback(feedbackResponse.data)
-//   } catch (error) {
-//     if (container) {
-//       container.innerHTML = `
-//         <div class="api-error">
-//           Something went wrong. Please, refresh the page
-//         </div>
-//       `
-//     }
-//   }
-// }
 async function loadFeedback(): Promise<void> {
   const container = document.getElementById("testimonialsContainer")
 
@@ -79,7 +46,7 @@ async function loadFeedback(): Promise<void> {
       feedbackResponse.data,
       container,
       createFeedbackCard,
-      2
+      4
     )
 
     const left = document.getElementById("feedbackLeft")
