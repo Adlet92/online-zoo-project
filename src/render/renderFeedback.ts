@@ -14,11 +14,11 @@ export function renderFeedback(feedbacks: Feedback[]): void {
     card.innerHTML = `
       <div class="card-meta">
         <div class="quote-sign"><span>“</span></div>
-        <span class="location">${feedback.location}, ${feedback.date}</span>
+        <span class="location">${feedback.city}, ${feedback.month} ${feedback.year}</span>
       </div>
 
       <div class="feedback-text">
-        ${feedback.message}
+        ${feedback.text}
       </div>
 
       <div class="client-name">

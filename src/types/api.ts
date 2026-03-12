@@ -11,9 +11,11 @@ export interface PetsResponse {
 export interface Feedback {
   id: number
   name: string
-  location: string
-  date: string
-  message: string
+  city: string
+  // date: string
+  month: string
+  year: string
+  text: string
 }
 export interface FeedbackResponse {
   data: Feedback[]
