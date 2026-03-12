@@ -391,7 +391,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  overflow: hidden;
 }
 
 .pet-card {
