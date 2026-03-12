@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/assets/Favicon-C7VjOzec.png">
+  <link rel="stylesheet" crossorigin href="/assets/index-B0KFy1xQ.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h1 class="visually-hidden">Online Zoo</h1>
+        <img src="../assets/images/landing_page/Logo.png" alt="Logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#" class="active">About</a></li>
+          <li><a href="./pages/map/map.html">Map</a></li>
+          <li><a href="./pages/zoos/zoos.html">Zoos</a></li>
+          <li><a href="./pages/contact_us/contact.html">Contact Us</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+        <ul class="nav-social">
+          <li>
+            <a href="#">
+              <img src="../assets/images/landing_page/YouTube.png" alt="YouTube" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../assets/images/landing_page/Instagram.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../assets/images/landing_page/Facebook.png" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2 class="watch-favorite-animal">Watch Your Favorite Animal Online</h2>
+        <p>Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.</p>
+        <a href="./pages/zoos/zoos.html" class="hero-cam-button">
+          <button class="btn">
+            <span class="hero-span">View Live Cam</span>
+            <img src="../assets/images/landing_page/Union.png" alt="Union" />
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <section class="welcome container">
+    <div class="welcome-text">
+      <h2 class="zoo-h2">Welcome to the Online Zoo</h2>
+      <p class="zoo-p">On our website, using live webcams, fans of all ages can observe various animals. Among them, are
+        Giant pandas,
+        eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in
+        front of our cameras. We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note:
+        animals are not always on view on cameras, so please check back if you don't see anything.</p>
+    </div>
+    <div class="welcome-image">
+      <img src="../assets/images/landing_page/Welcome.png" alt="Zoo Entrance" />
+    </div>
+  </section>
+  <section class="how-we-work container">
+    <div class="how-image">
+      <img src="../assets/images/landing_page/Eagles.png" alt="Eagles" />
+    </div>
+    <div class="how-text">
+      <h2 class="zoo-h2">How We Work</h2>
+      <p class="zoo-p">Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild
+        animals in our
+        zoo and worldwide. Every day, our experts work to safeguard the health and wellness of the animals. To continue
+        these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small,
+        go a long way to the conservation efforts of our pets.</p>
+    </div>
+  </section>
+  <section class="donation">
+    <div class="container donation-content">
+      <div class="text-content">
+        <h3>Your Donation Makes a Difference!</h3>
+        <p>The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your favourite
+          animals — live, 24/7!</p>
+      </div>
+      <div class="donate-form">
+        <h4>Quick donate</h4>
+        <div class="donate-input-group">
+          <input type="text" placeholder="$ Donation Amount" />
+          <button class="btn-donation">
+            <img src="../assets/images/landing_page/Union.png" alt="Union" class="btn-union" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pets container">
+    <h2 class="section-title">Meet Some of Our Pets</h2>
+    <h3 class="section-description">Do you have a special place in your heart for animals? Who are your favorites?
+      Perhaps you'd like to donate to special ones or all our pets? We think it's important for you to choose how your
+      donation is used. </h3>
+    <div class="arrows">
+      <div class="arrow-left" id="petsLeft">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAU9JREFUeAG9lU1OwkAYht+vg0l1Ne7YSMYbyM6YYGDHLcQTGE4g3IAbiEuXnoD6E8NObuCIex1XNDFm/CCVtBXpDy3PaubtNE/fdKYVSIGSp5dyt+bJPQUze71DRihpwVwAsr3fuf54SLwnjoMMAlgMkYNKagFows/URQ4otcA6LW08gyIkLLhgwSAUaVhRzyv4I2HBGQuGUcEXNxhrbACVLVhKlDw5AonnMgQLSSAY8ViiaIgG+v2+S2q/8cJThbKw3/X5YSy+QQRHOmxq8Sj39lwL4VqbR28rL37x7dLmiU80zkO5Au2MlDxWKIDYYWx0OLkKRYU0EuGJ8acT6R588tZrB5EEVZrSPbwxvvaRExEPjP82lm6NWNQMoiq3a28iEqtCbuQVKRL/XVgpcmzVzKa3yMjaPyPv8R6s7S8Diw5yIJIWRBqR7XMTDxn5Aa6Pl2RgRyBTAAAAAElFTkSuQmCC" alt="left">
+      </div>
+      <div class="arrow-right" id="petsRight">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAUtJREFUeAG11r9SgzAcB/DfDxx6nWInJ4lv0G4s9HB0Up9AfAPfQHgCH6HXN6ijk631PMc+Qoo7ZqMONgaoCtzxJzT9DlwICZ8LCQQExVDiXAHCRBY5CHPE+Jw39TFANShu5JEkHuD2mRKXNHVRR4RY5E6GbSATFMM3H++kd4qA6O6qTuTobL4Jp9qQDArnJYiSvkV5HD5qQyqgYRXUGfmD+tZZAvxDlPB4/aQNSaE4nJUgW0Kyfr3QhlRAbh5CSsb3cnXcQbb29QbRZ9FLgPTY+TwI8BvxPVJ/GTvEALEN4FBBETD+tkLQFDpwJiDAKwDRq58WQUPqgCR7zwkdjB/qgLQK9shu+fu5u01ZtPTK7TojbYHskg5AwIzx5XVV+yNQBhyvAACu5NTe1vXpsv1eFgBhnDft88ofSNKzvuRDtuU2LEdgXrT5kfgB4MyNU5wFYUQAAAAASUVORK5CYII=" alt="right">
+      </div>
+    </div>
+    <div class="pet-grid">
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/panda.png" alt="panda">
+          <span class="pet-name">Lucas</span>
+        </div>
+        <div class="pet-info">
+          <h4>Giant Panda</h4>
+          <p>Native to central China, giant pandas have come to symbolize vulnerable species.
+          </p>
+          <a href="./pages/zoos/zoos.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/Lemur.png" alt="Lemur">
+          <span class="pet-name">Andy</span>
+        </div>
+        <div class="pet-info">
+          <h4>Madagascarian Lemur </h4>
+          <p>Lemurs are considered the world’s most endangered group of mammals.
+          </p>
+          <a href="./pages/zoos/lemur.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/Gorilla.png" alt="Gorilla">
+          <span class="pet-name">Glen</span>
+        </div>
+        <div class="pet-info">
+          <h4>Gorilla in Congo </h4>
+          <p>Variety of snacks very important for the healthy life of gorillas and his plenty of babies.
+          </p>
+          <a href="./pages/zoos/gorilla.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/alligator.png" alt="alligator">
+          <span class="pet-name">Mike</span>
+        </div>
+        <div class="pet-info">
+          <h4>Chinese Alligator
+          </h4>
+          <p>From nose to tail, belly to back, hard scales protect this petite alligator.
+          </p>
+          <a href="./pages/zoos/zoos.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/2_eagles.png" alt="eagles">
+          <span class="pet-name">Sam & Lora</span>
+        </div>
+        <div class="pet-info">
+          <h4>West End Bald Eagles</h4>
+          <p>Pair of eagle parents lay and protect eggs, feed their chicks and teach them to hunt and fly.
+          </p>
+          <a href="./pages/zoos/eagle.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/Koala.png" alt="Koala">
+          <span class="pet-name">Liz</span>
+        </div>
+        <div class="pet-info">
+          <h4>Australian Koala</h4>
+          <p>The elevated walkways bring you to eye level with the koalas as they perch in their forest.
+          </p>
+          <a href="./pages/zoos/zoos.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/Lion.png" alt="Lion">
+          <span class="pet-name">Shake</span>
+        </div>
+        <div class="pet-info">
+          <h4>African Lion</h4>
+          <p>Lions roam the savannas and grasslands of Africa, hunting and raising cubs in the pride.</p>
+          <a href="./pages/zoos/zoos.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="pet-card">
+        <div class="pet-img">
+          <img src="../assets/images/landing_page/tiger.png" alt="tiger">
+          <span class="pet-name">Lucas</span>
+        </div>
+        <div class="pet-info">
+          <h4>Sumatran Tiger</h4>
+          <p>Sumatran Tigers are the smallest of the five sub-species, and are found in Indonesia.
+          </p>
+          <a href="./pages/zoos/zoos.html" class="pet-cam-button">
+            <button class="btn-pets">
+              <span class="btn-span">View Live Cam</span>
+              <img src="data:image/svg+xml,%3csvg%20width='28'%20height='25'%20viewBox='0%200%2028%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.878%200.135121C14.6728%200.224325%2014.4865%200.355065%2014.3296%200.519851C14.1723%200.684221%2014.0476%200.879485%2013.9624%201.09446C13.8773%201.30944%2013.8335%201.5399%2013.8335%201.77265C13.8335%202.00539%2013.8773%202.23586%2013.9624%202.45083C14.0476%202.66581%2014.1723%202.86107%2014.3296%203.02544L21.1185%2010.1365H1.80205C1.32411%2010.1365%200.865757%2010.3738%200.527808%2010.7963C0.189858%2011.2187%200%2011.7917%200%2012.3891C0%2012.9865%200.189858%2013.5594%200.527808%2013.9819C0.865757%2014.4043%201.32411%2014.6416%201.80205%2014.6416H21.1193L14.3296%2021.7536C14.0125%2022.0859%2013.8344%2022.5366%2013.8344%2023.0064C13.8344%2023.4763%2014.0125%2023.927%2014.3296%2024.2592C14.6467%2024.5915%2015.0767%2024.7782%2015.5252%2024.7782C15.9736%2024.7782%2016.4037%2024.5915%2016.7208%2024.2592L26.8527%2013.6423C27.01%2013.478%2027.1348%2013.2827%2027.2199%2013.0677C27.305%2012.8528%2027.3489%2012.6223%2027.3489%2012.3895C27.3489%2012.1568%2027.305%2011.9263%2027.2199%2011.7114C27.1348%2011.4964%2027.01%2011.3011%2026.8527%2011.1367L16.7208%200.519851C16.5639%200.355065%2016.3775%200.224325%2016.1724%200.135121C15.9672%200.0459159%2015.7473%200%2015.5252%200C15.3031%200%2015.0831%200.0459159%2014.878%200.135121Z'%20fill='%23F58021'/%3e%3c/svg%3e" alt="Union" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pay-feed">
+    <div class="container">
+      <h2 class="pay-title">Pay and Feed</h2>
+
+      <div class="feed-step">
+        <div class="step-header">
+          <div class="step-number">01</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <img src="../assets/images/landing_page/monkey.png" alt="" class="step-body-img">
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="../assets/images/landing_page/Vector1.png" alt="" class="step-icon-img">
+            </div>
+            <h4>Your donation has an impact</h4>
+            <p>
+              Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We
+              do all the best so that our animals can eat food similar to what they might find in their natural habitats
+              while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy.
+              Please help us provide nutritious food for our animals by donating. The generosity of people like you can
+              help us make sure that our animals enjoy good food that keeps them in great condition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feed-step">
+        <div class="step-header">
+          <div class="step-number">02</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <img src="../assets/images/landing_page/banana.png" alt="Banana">
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="../assets/images/landing_page/Vector2.png" alt="">
+            </div>
+            <h4>Make a donation</h4>
+            <p>
+              You can donate through your credit card without any fees. It is easy and safe. We do not keep donors'
+              personal information on an online network. Choose an amount to give and the pet's name if needed. One of
+              the
+              most effective ways you can give is by making regular donations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feed-step">
+        <div class="step-header">
+          <div class="step-number">03</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <img src="../assets/images/landing_page/Rectangle 38.png" alt="Feeding">
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="../assets/images/landing_page/Vector3.png" alt="">
+            </div>
+            <h4>Bring your food charity — straight to your favorite pets</h4>
+            <p>
+              After your donation, the animal receives its favorite foods. You can support your favorite animals or any
+              animal you care about and make a real personal impact. Never doubt that your donation can make a
+              difference
+              even if it is small.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feed-button-class">
+        <button class="feed-btn">
+          <span class="hero-span">Donate Now</span>
+          <img src="../assets/images/landing_page/Union.png" alt="Union" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <div class="container testimonials-wrapper">
+      <div class="testimonials-left">
+        <h2 class="testimonials-h2">What Our Users Think</h2>
+        <p class="section-subhead">
+          We are continuously striving to improve the experiences of our future guests.<br>
+          Below you can learn your own feedback, or simply view feedback from past clients.
+        </p>
+      </div>
+      <div class="testimonials-right">
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="card-meta">
+              <div class="quote-sign">
+                <span>“</span>
+              </div>
+              <span class="location">New Jersey, June 2020</span>
+            </div>
+            <div class="feedback-text">
+              I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were
+              very impressed by the opportunity to explore the life of incredible animals in real-time.
+            </div>
+            <div class="client-name">Karen Maithlan</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="card-meta">
+              <div class="quote-sign">
+                <span>“</span>
+              </div>
+              <span class="location">Toronto, November 2020</span>
+            </div>
+            <div class="feedback-text">
+              We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these
+              fascinating animal friends with us so that we may learn and increase our understanding of the animal
+              kingdom.
+            </div>
+            <div class="client-name">Carol Larsen</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="card-meta">
+              <div class="quote-sign">
+                <span>“</span>
+              </div>
+              <span class="location">London, February 2020</span>
+            </div>
+            <div class="feedback-text">
+              A fantastic experience for kids and adults alike! If anyone is looking for an attraction that educates
+              people on wild animals – it's for you! I highly recommend seeing for yourself the variety of animals on
+              your screen.
+            </div>
+            <div class="client-name">C. Stockman</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="card-meta">
+              <div class="quote-sign">
+                <span>“</span>
+              </div>
+              <span class="location">Amsterdam, June 2020</span>
+            </div>
+            <div class="feedback-text">
+              I want to thank you for the amazing sites you find to put your cameras to let each of us see things that
+              we
+              would probably never see on our own. There are so many positives on Zoo Online and I'm grateful for it.
+              Thank you so much!
+            </div>
+            <div class="client-name">Tomas Ray</div>
+          </div>
+          <div class="arrows-testimonials">
+            <div class="arrows-testimonials-left">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAK1JREFUeAHFluENwiAUhA8ncBTdxBHcpO0EHaHdgBGIE+gGHcERnoc2UUljwHDtl1yAP+8LkBcACjGzE3NnJmYPBSzs7c01R7RDOZeP+YEJkh2xaGvfBChYEA1QsKZoTEQ9FCyIGij4KYqLubkUPEUuCjhqOvfF8Z9mLCZKOujonHM31ILHPiT30aImawh6taBJBCNqsoXAoyYseE4EWa9jqcRLBbMkfiQmJuQKHlgDpWmmDxQZAAAAAElFTkSuQmCC" alt="right">
+            </div>
+            <div class="arrows-testimonials-right">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAJZJREFUeAHd1eENQDAQhuGvJjCCERjBJGzABmxgBLGJDYxgBDY4VyJpmkpE7vrDmxS/PE3atMCLiKijqw4aOcAZpPMBboRkAWDhkUKqGEDjAas0UAWADFLFAPIYwEY6DdYwdtb8zqBXkfBDbueESy1S8tih02SMmc8v9YW/45/Wv4NaD5I9txyo/z0ke2k9QdDKgXp86ABzk8svnbqJyQAAAABJRU5ErkJggg==" alt="left">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="btn-testimonials">
+        <span class="btn-testimonials-span">leave feedback</span>
+        <img src="../assets/images/landing_page/Union.png" alt="Union" />
+      </button>
+    </div>
+  </section>
+  <section class="care container">
+    <div class="care-text-container">
+      <h2 class="section-title green">Care for the Animals You Love</h2>
+      <p class="care-subtitle">
+        You can help to look after the animals you love with your gift today
+      </p>
+    </div>
+    <div class="care-grid">
+      <div class="care-big">
+        <img src="../assets/images/landing_page/koala2.png" alt="Koala" />
+      </div>
+      <a href="./pages/zoos/zoos.html" class="care-card-a">
+        <div class="care-card">
+          <img src="../assets/images/landing_page/panda3.png" alt="Panda" />
+          <div class="care-info">
+            <p>Your $30 could give Lucas a slice of panda cake, made with our secret recipe.</p>
+            <button class="btn-feed">
+              <span class="btn-feed-span">Feed</span>
+              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+            </button>
+          </div>
+        </div>
+      </a>
+      <div class="care-card">
+        <img src="../assets/images/landing_page/tiger2.png" alt="Tiger" />
+        <div class="care-info">
+          <p> Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.</p>
+          <button class="btn-feed">
+            <span class="btn-feed-span">Feed</span>
+            <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+          </button>
+        </div>
+      </div>
+      <a href="./pages/zoos/lemur.html" class="care-card-a">
+        <div class="care-card">
+          <img src="../assets/images/landing_page/lemur2.png" alt="Lemur" />
+          <div class="care-info">
+            <p>With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its
+              natural habitat.</p>
+            <button class="btn-feed">
+              <span class="btn-feed-span">Feed</span>
+              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+            </button>
+          </div>
+        </div>
+      </a>
+
+      <a href="./pages/zoos/eagle.html" class="care-card-a">
+        <div class="care-card">
+          <img src="../assets/images/landing_page/eagels2.png" alt="Eagles" />
+          <div class="care-info">
+            <p>Sam & Lora have hatched and raised numerous young and will be happy with your help. </p>
+            <button class="btn-feed">
+              <span class="btn-feed-span">Feed</span>
+              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+            </button>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+    <div class="care-btn-container">
+      <button class="care-btn">
+        <span class="care-btn-span">Choose Your Favourite</span>
+        <img src="data:image/svg+xml,%3csvg%20width='25'%20height='22'%20viewBox='0%200%2025%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.2098%200.119971C13.0277%200.199174%2012.8622%200.315255%2012.7229%200.461565C12.5833%200.607505%2012.4725%200.780876%2012.397%200.971748C12.3214%201.16262%2012.2825%201.36724%2012.2825%201.57389C12.2825%201.78055%2012.3214%201.98517%2012.397%202.17604C12.4725%202.36691%2012.5833%202.54028%2012.7229%202.68622L18.7506%209H1.6C1.17565%209%200.768688%209.21071%200.468629%209.58579C0.168571%209.96086%200%2010.4696%200%2011C0%2011.5304%200.168571%2012.0391%200.468629%2012.4142C0.768688%2012.7893%201.17565%2013%201.6%2013H18.7514L12.7229%2019.3146C12.4414%2019.6096%2012.2833%2020.0097%2012.2833%2020.4269C12.2833%2020.8441%2012.4414%2021.2443%2012.7229%2021.5393C13.0045%2021.8343%2013.3863%2022%2013.7845%2022C14.1826%2022%2014.5645%2021.8343%2014.846%2021.5393L23.842%2012.1127C23.9816%2011.9668%2024.0924%2011.7934%2024.168%2011.6026C24.2436%2011.4117%2024.2825%2011.2071%2024.2825%2011.0004C24.2825%2010.7938%2024.2436%2010.5891%2024.168%2010.3983C24.0924%2010.2074%2023.9816%2010.034%2023.842%209.88808L14.846%200.461565C14.7067%200.315255%2014.5413%200.199174%2014.3591%200.119971C14.177%200.0407677%2013.9817%200%2013.7845%200C13.5873%200%2013.392%200.0407677%2013.2098%200.119971Z'%20fill='%2320113D'/%3e%3c/svg%3e" alt="Union" />
+      </button>
+    </div>
+
+  </section>
+
+  <section class="care-video container">
+    <img src="../assets/images/landing_page/Touch_the_animal.png" alt="Zoo Online Video" />
+  </section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logos">
+        <img src="data:image/png;base64,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" alt="Online Zoo" />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA/9JREFUeAHdWu912jAQP+f1e9kg2qB0gjgb0AkCE4RMAJkAdwLoBOkGphNAJpAzQegE17v4FIRjS2djIK+/9+7JTu5OOkn3RzIJ9ARENNSkRN+kHXjkUAhtiZ6J1kmSFHBp0OAHRDMii91hiRYyEWc3ICXKsX8sz2IQd0L0hKfH8mQGkeJ7olc8HyzRGPoElnv4UlhoxphEDOCIkxMN4bLgKHdLEW7XxNBoyCcywiFoTMiQDXQzgjtaE71I5z4MHOaZttiSId/V3B19IidKW/TBIXyF7VHrM0lNB2NqlqDHmmjiZ2gxiFfzGvYzzyvEPDyrW4/XUDMnugM9HkhH1vhfLPOEVc4Mh+JpRXaBuhBtsZIr6HmE7fo2IUOWSkXWKcKyTDkmPM86TuRTaDU0sLg3ok3Hp9CZHrMaxpOZYn+oblPNFs27rsa0ZgIyPB5Zjd5UKTtoO5gNNACPq4RDejUF6twXsAqBNNDhALv5isVA9EHdTrFtmHOIAPX72iEcQtutyvUVlOVCDL9iDJIQf4AeE+Ux96eC51brH28OhYrzAeoi2Vyh5857jq10pnHUXJQN5d0oBpEFO43Lu1wylPfY9trw1jIRvYW0ji9ah9GW4TC9btA1hzhm0l8q788R/oHGkBdpXUnP8X0EcbC/FN47PwcPRwxZhbG8Gk82hDdDYthVlDK4tgqeJ2TAtyL/9qx0br+G+go6tDLEhyGaxgRl4BOiR40RWAYTAx3wBcqBhmbXSFs16BoUIAN+gx6m8v4XlOAV2UV43IAL72/8/AA9g4yew+HxuJDWREQLjSHOydfSuv0ek+sKP0g4o24iMkXbhPiqjFhHQXLWxntXJcQxxjEVhQbOBNwnw5FifGNt0djGYfs2SLNjzJWExSKi7xWUwPKkuQj8f8Y8oEfMF4v30E6K5wFrLerqKz6T5J5cWsPjn/o2GEmqnl4bGF9WZa6D9sxgZGDVCRhUeCx2myQTMMZUmfMapmiEinSy8PiWDTxWaUxaI7vUMM5BAYyX2Bx17iM8Kp/Bj2cd4/6XVAdFDa/CmugRyiDgf9B0z+yAW+dkYvSsof+dJ1uHR8nobgxDj3cHH52dx8g8K5Kb1GrEdudui96JUWRXqLuE4D4yPLwj4x2Row4WK9ux7hKbk5/qK5GAc8xDwyW2gX0pzgUg8/BKriu8vJop6MHn/VWUC7tduuWoLF+wjJIj7HYfltXpPOWHHj6eFnBYwTLdiN5oDqlB44ee///TG+MTGRM0Qg3s56K6KzLoE1iW+xbPh4MvYn0b43LFqcHVgoFT44QG5djiy3DfBrH/WOwOi+Uxoks4fkcCPQH3PzzjCMc/CjBwePux8+gPlJGotx+e/QPKpblw+oHamgAAAABJRU5ErkJggg==" alt="Logo 2" />
+        <img src="data:image/png;base64,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" alt="Logo 3" />
+      </div>
+      <nav class="footer-menu">
+        <a href="../../index.html">ABOUT</a>
+        <a href="../../pages/map/map.html">MAP</a>
+        <a href="../../pages/zoos/zoos.html">ZOOS</a>
+        <a href="../../pages/contact_us/contact.html">CONTACT US</a>
+      </nav>
+      <div class="footer-btn">
+        <button class="btn-donate">
+          DONATE FOR VOLUNTEERS →
+        </button>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-copy">
+        © 2021 DinaK &nbsp;&nbsp; © Yem Digital &nbsp;&nbsp; © RSSchool
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJgSURBVHgBzZnxdbIwFMUfPd//xQ1wAt3gsxPUEegEsoF2Au0E0A26gToBdALsBNAJXt8zpHhaEkJMsPecazwN1p83IXnGACyFAAtq5uT/TRs2ZtXkU+N38iEgg28RVEhekysyDnRJTskRuFYDtrWAUtkdKP2jlWViJonGcI0cp6byFoaqGdL9CHDSObY3mBFgPiKc9N4Ubovjw5kNN0/aG8JJJyq4CMWddWtAXjHCLsD0D8D9GupApkdNqRz7xQLg8ZGuosvCULRSl8+7dDqJtq5b899eXtq+bk0CsWX2pJem6E1JoktxAxfDW3ZeFMfoVVWFGIbKuchsdyiqkqgz5PkcvIqnC08fRS+z3YEA7NZsBt6ln8NzBrye4vm5b8KrpQc8JxhZvrjV4QAwnQI8PQ0Hvb/X9c7cAEplGcDDA8Drq/lrJhNdb8iA5lWEiTjBOBaJcrJ90id4BvSj0M3nZsAaXIrBtrRT5bluCWmln7O1HrAeyL5a0ZJPO2aSgCOdGLBQdpsCclKc2G43fGg/PrS9/+jhSF7CNYDrNVhL/x6FPsHjEbyrKHS9h/Mjqr5WLpfoXepioS3/uLRRlj1Zht602ejKrZTZZMHKM7tSBs0LL1c2sniQOwzfEH03xeUyws/Zn58Ab299C/k0EGc73ynuPJTutk5/4aKovyoEwBu7RFV9QB3JHwCMQacbD/UOTITjnstI52AqFPNxzPOZPdqUfSMNt9mwaiD5vKb0AMYrhpuyB8W5TeYyNXRdyf8AtUmUE9sMBQvAUii+T7N5/4saX/4MweZShUuiwvZniC9qRKyvfOKpcwAAAABJRU5ErkJggg==" alt="YouTube" />
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="data:image/png;base64,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" alt="Instagram" />
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBzZlNSFRRFMf/5zqaWcJEBdkHTYuIomikjTV9TNu+KCLS2lQE6SLGlkWQEUQ7rRZNqyQohYKKDNr5Ii13TmC4sMWYlYEKI4ofY77TvU/fMF+Ob96M4/tt3nv3Xp3/nHvueeecIdikqvqJn4i9BHFEPnrlvRtMbmOSOAIWYQaHwfxNB7Su1joNNqBsFvtPP3NHy6IBgl4fE2OdsPw0bVbnu1Js2OofWRKohM2sjN4BuB75gNBsVWjRYgv2XwgGuPjfW3nrR/7wCqLTW3YfHx3o+RDKtDCjBX01TxvzZrWFEGjqfFF7Y6HptALntnT6DfJrtQxQqHiy5Kj29nIkeUakWy79rR0FE6dg77xBUkgROL+tXhQev+9isDF5MOGQHKh+cokID7BcMKo27zk5+qunrcscivmgDLweebLa5YAHNrlydh8qd27Eds9arC5bgfGJaQwOjaO79zcePf9q8b9QRPrjNtMfXeZwkaA78ht4YJNbtX4cO7wjYUyJ3L51Tqh12D2zalrGXBgn2/BBZT0p7hJscmifJ0VcPH3hEWSFjnoVSWAKNKyXA5W7NqaMDQ6Pya0dRF//CH70DyNbomVTRvw1tpgZ/qxeyklsWF+e8Px3aAznAi+RC8QiIC8NwshKcjgYinLpa/Eo6+UOuw9KbUIUNCBnxywJrwsk9qoAZIdXDy8Y1/JVJQnjKtSYc4r7wXbDH7OFWPe7ctneiiTfszpnFSLaK0C6B0vM+EQU9iC3y0ZmHMM8DBXrypMETWMsTpR9gewmX03QngPG8fj2KRkLK2LP3b1/cP3ee+QDYRQ4joUigpmcK5A4LFQ2C4fCOvcLxuwnOJeQKGLnWlBuryY6VMXvzIMSVtqMdIt1PITTYGjqYggsKZ1qgsOYBd9VV0Og1nwjIt/JzrEio9lsi8TKTteKyQaH+GLYtJ4iIZH2nX9aD8GNWEaY+fKX1rpm8zmhLh743ta1dc+JNfK2CsuAcrPO1roHSWOp+KplhkmFzrQp1NlyrTJ5NG1vprh08kyBX4Gaah6lm8hYzB2sCTbJXCyAJURta0dL7YItvowNzJ89bR9lk7Ff5t6yFw3biW16ZSpiiJudLbUNmZYt2mFVHdBNu4+/k76wRglFHlBWK54sPfP59VXNwlrrqBaJ/EYNTHQk62JLWozkK9U1VdqUrlGZF4HxqKJaVzW1rLwI5DGKr7ifIeYT4RBD/6Qypg6bP0P8Bx/yRq0EQIfSAAAAAElFTkSuQmCC" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="donation-overlay" id="donationOverlay">
+    <div class="donation-popup">
+      <button class="popup-close" id="popupClose">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAKJJREFUeAG11UsKwCAMBNDQi+vNp9hS0OIn0ZlZRuEtTKIBSHiTTJzGQhsZXqFPSiGr8T9azO9Ahg/R6gIdX6IK3I0y8TDKwLfRE/wY3cFpaASnox5chs5wOTrB9egCzxbMZfHAWeOl86bdhlOjGeovdda9MhyOkaHjCMwpDcfGcjjGcbCRtnEQ1mAYZ6BhnIm6cQW6xJXoFFejI7wuZBOntm7YXQE7P6x+jQAAAABJRU5ErkJggg==" alt="Close">
+      </button>
+
+      <div class="popup-image">
+        <img src="/assets/popup_image-B3ScH3jK.png" alt="Donate">
+      </div>
+
+      <div class="popup-content">
+        <h2>TOGETHER WE CARE,<br> SAVE AND PROTECT!</h2>
+
+        <p>
+          Your most generous gift not only cares for countless animals, but it also offers hope and a vital lifeline to
+          the world’s most endangered wildlife relying on us to survive.
+        </p>
+
+        <div class="donation-amounts">
+          <button>$20</button>
+          <button>$30</button>
+          <button>$50</button>
+          <button>$80</button>
+          <button>$100</button>
+          <button class="other">OTHER AMOUNT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="donation-overlay-steps" id="donationOverlaySteps">
+    <!-- <div class="donation-modal-steps"> -->
+    <div class="donation-step step-1 active">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Donation Information:</h3>
+        </div>
+        <div class="form-group">
+          <label class="choose-donation">* Choose your donation amount:</label>
+
+          <div class="amount-buttons">
+            <button>$10</button>
+            <button>$20</button>
+            <button>$30</button>
+            <button>$50</button>
+            <button>$80</button>
+            <button>$100</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button class="left-btn">OTHER AMOUNT</button>
+          <input type="number" class="right-input" />
+        </div>
+
+        <div class="form-row">
+          <button class="left-btn light">FOR SPECIAL PET</button>
+
+          <div class="custom-select">
+            <div class="select-display">
+              <span class="placeholder">Choose your favourite</span>
+              <div class="arrow-choose">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIBJREFUeAG10LEJgDAQheGTLKAbOIKOY5cR3MARHMERsoKlnbVVWjtbS99hAkE84hUe/CiafIQYInJoQzvpZ0AtvzTIh6cW4H11/GDRoYAYWFMghfzbDwEopQU2A405IAdNX4E4/QNiwEmAEZAFVXQfny+7QB06NQjPHCDO0t9zAeF/GDSJ6gQsAAAAAElFTkSuQmCC" alt="Arrow" />
+              </div>
+            </div>
+            <div class="select-options hidden">
+              <div class="option">Lukas the Panda</div>
+              <div class="option">Andy the Lemur</div>
+              <div class="option">Glen the Gorilla</div>
+              <div class="option">Mike the Alligator</div>
+              <div class="option">Sam & Lora the eagles family</div>
+              <div class="option">Liz the Koala</div>
+              <div class="option">Shake the Lion</div>
+              <div class="option">Senja the Tiger</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" class="checkbox-container">
+          <span>Make this a monthly recurring gift</span>
+        </div>
+
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="next-btn">
+              <span>Next</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAK1JREFUeAHFluENwiAUhA8ncBTdxBHcpO0EHaHdgBGIE+gGHcERnoc2UUljwHDtl1yAP+8LkBcACjGzE3NnJmYPBSzs7c01R7RDOZeP+YEJkh2xaGvfBChYEA1QsKZoTEQ9FCyIGij4KYqLubkUPEUuCjhqOvfF8Z9mLCZKOujonHM31ILHPiT30aImawh6taBJBCNqsoXAoyYseE4EWa9jqcRLBbMkfiQmJuQKHlgDpWmmDxQZAAAAAElFTkSuQmCC" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="donation-step step-2">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Billing Information:</h3>
+        </div>
+        <form class="contact-form">
+          <p><span class="label">*</span> <span class="value">Your Name</span></p>
+          <input type="text" placeholder="First and last name" />
+
+          <p><span class="label">*</span> <span class="value">Your Email Address</span></p>
+          <input type="email" placeholder="Enter your email" />
+          <div class="second-step-text">
+            <span>
+              You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
+              translations. You can unsubscribe at any time.
+            </span>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="back-btn">
+              <span>Back</span>
+            </button>
+            <button class="next-btn">
+              <span>Next</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAK1JREFUeAHFluENwiAUhA8ncBTdxBHcpO0EHaHdgBGIE+gGHcERnoc2UUljwHDtl1yAP+8LkBcACjGzE3NnJmYPBSzs7c01R7RDOZeP+YEJkh2xaGvfBChYEA1QsKZoTEQ9FCyIGij4KYqLubkUPEUuCjhqOvfF8Z9mLCZKOujonHM31ILHPiT30aImawh6taBJBCNqsoXAoyYseE4EWa9jqcRLBbMkfiQmJuQKHlgDpWmmDxQZAAAAAElFTkSuQmCC" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STEP 3 -->
+    <div class="donation-step step-3">
+      <div class="donation-header">
+        <h2>Make your donation</h2>
+      </div>
+      <div class="donation-body">
+
+        <div class="section-title">
+          <h3>Payment Information:</h3>
+        </div>
+        <div class="payment-form">
+          <div class="card-row">
+            <div class="form-group">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-avalue">Card Number</span>
+              </label>
+              <input type="text" class="card-input" />
+            </div>
+
+            <div class="form-group">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-value">CVV Number</span>
+              </label>
+              <input type="text" class="cvv-input" />
+            </div>
+          </div>
+          <div class="month-year-inputs">
+            <div class="month-wrapper">
+              <label>
+                <span class="payment-label">*</span>
+                <span class="payment-value">Expiration Date</span>
+              </label>
+              <div class="select-display month">
+                <span class="value-step-3">Month</span>
+                <div class="arrow-choose">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIBJREFUeAG10LEJgDAQheGTLKAbOIKOY5cR3MARHMERsoKlnbVVWjtbS99hAkE84hUe/CiafIQYInJoQzvpZ0AtvzTIh6cW4H11/GDRoYAYWFMghfzbDwEopQU2A405IAdNX4E4/QNiwEmAEZAFVXQfny+7QB06NQjPHCDO0t9zAeF/GDSJ6gQsAAAAAElFTkSuQmCC" alt="Arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="select-display year">
+              <span class="placeholder">Year</span>
+              <div class="arrow-choose">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIBJREFUeAG10LEJgDAQheGTLKAbOIKOY5cR3MARHMERsoKlnbVVWjtbS99hAkE84hUe/CiafIQYInJoQzvpZ0AtvzTIh6cW4H11/GDRoYAYWFMghfzbDwEopQU2A405IAdNX4E4/QNiwEmAEZAFVXQfny+7QB06NQjPHCDO0t9zAeF/GDSJ6gQsAAAAAElFTkSuQmCC" alt="Arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="steps-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next-btn-footer">
+            <button class="back-btn">
+              <span>Back</span>
+            </button>
+            <button class="next-btn-step-3">
+              <span>Complete Donation</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAK1JREFUeAHFluENwiAUhA8ncBTdxBHcpO0EHaHdgBGIE+gGHcERnoc2UUljwHDtl1yAP+8LkBcACjGzE3NnJmYPBSzs7c01R7RDOZeP+YEJkh2xaGvfBChYEA1QsKZoTEQ9FCyIGij4KYqLubkUPEUuCjhqOvfF8Z9mLCZKOujonHM31ILHPiT30aImawh6taBJBCNqsoXAoyYseE4EWa9jqcRLBbMkfiQmJuQKHlgDpWmmDxQZAAAAAElFTkSuQmCC" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const grid = document.querySelector('.pet-grid');
+  const btnRight = document.getElementById('petsRight');
+  const btnLeft = document.getElementById('petsLeft');
+  const cardWidth = 478 + 25;
+  let currentPosition = 0;
+  const scrollAmount = 500;
+
+  btnRight.addEventListener('click', () => {
+    grid.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  btnLeft.addEventListener('click', () => {
+    grid.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  const overlay = document.getElementById("donationOverlay");
+  const closeBtn = document.getElementById("popupClose");
+  const donateTrigger = document.querySelector(".donate-form");
+  const donateForVol = document.querySelector(".btn-donate");
+
+  donateTrigger.addEventListener("click", () => {
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  });
+  donateForVol.addEventListener("click", () => {
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
+  });
+
+  // Second Modal (Steps)
+  const overlaySteps = document.getElementById("donationOverlaySteps");
+  const feedBtns = document.querySelectorAll('.feed-btn');
+  const steps = document.querySelectorAll('.donation-step');
+  const indicators = document.querySelectorAll('.steps-indicator .dot');
+
+  let currentStep = 0;
+
+  feedBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      overlaySteps.classList.add('active');
+      document.body.classList.add('modal-open');
+      showStep(0);
+    });
+  });
+
+  overlaySteps.addEventListener('click', (e) => {
+    if (e.target === overlaySteps) {
+      overlaySteps.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+  });
+
+  function showStep(index) {
+    steps.forEach(step => step.classList.remove('active'));
+    steps[index].classList.add('active');
+    const currentDots = steps[index].querySelectorAll('.dot');
+    currentDots.forEach(dot => dot.classList.remove('active'));
+    for (let i = 0; i <= index; i++) {
+      if (currentDots[i]) {
+        currentDots[i].classList.add('active');
+      }
+    }
+
+    currentStep = index;
+  }
+
+  document.querySelectorAll('.next-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep < steps.length - 1) {
+        showStep(currentStep + 1);
+      }
+    });
+  });
+
+  document.querySelectorAll('.back-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 0) {
+        showStep(currentStep - 1);
+      }
+    });
+  });
+
+
+  // const dropdownToggle = document.querySelector('.dropdown-toggle');
+  // const dropdownMenu = document.querySelector('.dropdown-menu');
+  // const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+  // dropdownToggle.addEventListener('click', () => {
+  //   dropdownMenu.classList.toggle('hidden');
+  // });
+
+  // dropdownItems.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     dropdownItems.forEach(i => i.classList.remove('active'));
+  //     item.classList.add('active');
+  //     dropdownToggle.textContent = item.textContent;
+  //     dropdownMenu.classList.add('hidden');
+  //   });
+  // });
+</script>
+
+</html>
