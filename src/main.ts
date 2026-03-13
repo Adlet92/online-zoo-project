@@ -138,20 +138,40 @@ function setActiveSidebar(petId: number): void {
 
 }
 async function loadPetDetails(petId: number): Promise<void> {
+  const didSection = document.querySelector(".did")
+  const didLoader = didSection?.querySelector(".loader")
+  // const didText = document.getElementById("didText")
+
+  const animalInfo = document.querySelector(".animal-info")
+  const infoLoader = animalInfo?.querySelector(".loader")
+
+  didLoader?.classList.remove("hidden")
+  infoLoader?.classList.remove("hidden")
 
   try {
 
     const response = await getPetById(petId)
 
     renderPetDetails(response.data)
+    didLoader?.classList.add("hidden")
+    infoLoader?.classList.add("hidden")
 
   } catch {
 
-    const didText = document.getElementById("didText")
+    // const didText = document.getElementById("didText")
 
-    if (didText) {
-      didText.textContent =
-        "Something went wrong. Please refresh the page"
+    // if (didText) {
+    //   didText.textContent =
+    //     "Something went wrong. Please refresh the page"
+    // }
+    if (didSection) {
+      didSection.innerHTML =
+        `<div class="api-error">Something went wrong. Please, refresh the page</div>`
+    }
+
+    if (animalInfo) {
+      animalInfo.innerHTML =
+        `<div class="api-error">Something went wrong. Please, refresh the page</div>`
     }
 
   }
@@ -177,13 +197,25 @@ async function loadZooPage(): Promise<void> {
 
   if (!petId) return
 
-  await setLiveTitle()
+  const liveLayout = document.querySelector(".live-layout")
+  const loader = liveLayout?.querySelector(".loader")
+  loader?.classList.remove("hidden");
+  try {
+    await setLiveTitle()
 
-  updateMainCamera(petId)
-  updateThumbnails(petId)
-  setActiveSidebar(petId)
-  updateInfoImage(petId)
-  loadPetDetails(petId)
+    updateMainCamera(petId)
+    updateThumbnails(petId)
+    setActiveSidebar(petId)
+    updateInfoImage(petId)
+    loader?.classList.add("hidden");
+    loadPetDetails(petId)
+
+  } catch {
+    if (liveLayout) {
+      liveLayout.innerHTML = `<div class="api-error">Something went wrong. Please refresh the page</div>`
+    }
+}
+
 
 }
 
