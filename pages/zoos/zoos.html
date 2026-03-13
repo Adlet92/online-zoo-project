@@ -45,52 +45,56 @@
       </nav>
     </div>
   </header>
-  <section class="live">
-    <div class="zoo-sidebar" id="sidebar">
-      <div class="live-banner">
-        <img src="../../assets/images/zoos/Live_badge_2.png" class="live-banner-top" />
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-          <img src="../../assets/images/zoos/expand_icon.png" class="expand-icon" id="toggleIcon" />
-        </button>
+  <div id="zooTopLoader" class="loader"></div>
+  <div id="zooTopContent" class="hidden">
+    <section class="live">
+      <div class="zoo-sidebar" id="sidebar">
+        <div class="live-banner">
+          <img src="../../assets/images/zoos/Live_badge_2.png" class="live-banner-top" />
+          <button class="sidebar-toggle" onclick="toggleSidebar()">
+            <img src="../../assets/images/zoos/expand_icon.png" class="expand-icon" id="toggleIcon" />
+          </button>
+        </div>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-list" id="sidebarList">
+        </div>
       </div>
-      <div class="sidebar-divider"></div>
-      <div class="sidebar-list" id="sidebarList">
-        <div class="loader"></div>
-      </div>
+      <div class="live-layout container">
+        <div class="live-content">
+          <div class="live-top">
+            <h1 class="live-title"></h1>
+            <button class="feed-btn">
+              <span class="hero-span">DONATE NOW</span>
+              <img src="../../assets/images/landing_page/Union.png" alt="Union" />
+            </button>
+          </div>
+          <div class="live-main">
+            <img src="" />
+          </div>
+          <h3 class="more-title">MORE LIVE VIEWS</h3>
+          <div class="live-cams">
+            <button class="arrow">
+              <img src="../../assets/images/zoos/left.png" alt="Left Arrow" />
+            </button>
+            <div class="cam active">
+              <img src="" />
+            </div>
+            <div class="cam">
+              <img src="" />
+            </div>
+            <div class="cam">
+              <img src="" />
+            </div>
+            <button class="arrow">
+              <img src="../../assets/images/zoos/right.png" alt="Right Arrow" />
+            </button>
+          </div>
+        </div>
+    </section>
+    <div id="zooInfoError" class="api-error hidden">
+      Something went wrong. Please, refresh the page
     </div>
-    <div class="live-layout container">
-      <div class="loader"></div>
-      <div class="live-content">
-        <div class="live-top">
-          <h1 class="live-title"></h1>
-          <button class="feed-btn">
-            <span class="hero-span">DONATE NOW</span>
-            <img src="../../assets/images/landing_page/Union.png" alt="Union" />
-          </button>
-        </div>
-        <div class="live-main">
-          <img src="" />
-        </div>
-        <h3 class="more-title">MORE LIVE VIEWS</h3>
-        <div class="live-cams">
-          <button class="arrow">
-            <img src="../../assets/images/zoos/left.png" alt="Left Arrow" />
-          </button>
-          <div class="cam active">
-            <img src="" />
-          </div>
-          <div class="cam">
-            <img src="" />
-          </div>
-          <div class="cam">
-            <img src="" />
-          </div>
-          <button class="arrow">
-            <img src="../../assets/images/zoos/right.png" alt="Right Arrow" />
-          </button>
-        </div>
-      </div>
-  </section>
+  </div>
   <section class="donation">
     <div class="container donation-content">
       <div class="text-content">
@@ -110,39 +114,43 @@
       </div>
     </div>
   </section>
-  <section class="did container">
-    <div class="loader"></div>
-    <h2 class="did-title">DID YOU KNOW?</h2>
-    <p class="did-text" id="didText">
-    </p>
-  </section>
-  <section class="animal-info container">
-    <div class="loader"></div>
-    <div class="info-text">
-      <p><span class="label">Common name:</span> <span class="value" id="commonName"></span></p>
-      <p><span class="label">Scientific name:</span> <span class="value" id="scientificName"></span></p>
-      <p><span class="label">Type:</span> <span class="value" id="type"></span></p>
-      <p><span class="label">Size:</span> <span class="value" id="size"></span></p>
-      <p><span class="label">Diet:</span> <span class="value" id="diet"></span></p>
-      <p><span class="label">Habitat:</span> <span class="value" id="habitat"></span></p>
-      <p>
-        <span class="label">Range:</span>
-        <span class="value" id="range"></span>
-        <a href="../map/map.html">
-          <button class="info-btn">
-            <span class="info-span">VIEW MAP</span>
-            <img src="../../assets/images/landing_page/union_orange_white.svg" alt="Union" />
-          </button>
-        </a>
+  <div id="zooInfoLoader" class="loader"></div>
+  <div id="zooInfoContent" class="hidden">
+    <section class="did container">
+      <h2 class="did-title">DID YOU KNOW?</h2>
+      <p class="did-text" id="didText">
+      </p>
+    </section>
+    <section class="animal-info container">
+      <div class="info-text">
+        <p><span class="label">Common name:</span> <span class="value" id="commonName"></span></p>
+        <p><span class="label">Scientific name:</span> <span class="value" id="scientificName"></span></p>
+        <p><span class="label">Type:</span> <span class="value" id="type"></span></p>
+        <p><span class="label">Size:</span> <span class="value" id="size"></span></p>
+        <p><span class="label">Diet:</span> <span class="value" id="diet"></span></p>
+        <p><span class="label">Habitat:</span> <span class="value" id="habitat"></span></p>
+        <p>
+          <span class="label">Range:</span>
+          <span class="value" id="range"></span>
+          <a href="../map/map.html">
+            <button class="info-btn">
+              <span class="info-span">VIEW MAP</span>
+              <img src="../../assets/images/landing_page/union_orange_white.svg" alt="Union" />
+            </button>
+          </a>
+      </div>
+
+      <img src="" class="info-img" id="infoImage" />
+    </section>
+
+    <section class="animal-desc container">
+      <p id="detailedDescription">
+      </p>
+    </section>
+    <div id="zooInfoError" class="api-error hidden">
+      Something went wrong. Please, refresh the page
     </div>
-
-    <img src="" class="info-img" id="infoImage" />
-  </section>
-
-  <section class="animal-desc container">
-    <p id="detailedDescription">
-    </p>
-  </section>
+  </div>
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-logos">

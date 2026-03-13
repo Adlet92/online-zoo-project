@@ -10,7 +10,6 @@ async function init(): Promise<void> {
   loadPets()
   loadFeedback()
   loadSidebar()
-  setLiveTitle()
 }
 async function loadPets(): Promise<void> {
   const container = document.getElementById("petsContainer")
@@ -74,22 +73,13 @@ function getPetIdFromUrl(): number | null {
 
   return Number(petId)
 }
-async function setLiveTitle(): Promise<void> {
+
+function setLiveTitle(petName: string): void {
   const title = document.querySelector(".live-title")
+
   if (!title) return
 
-  const petId = getPetIdFromUrl()
-  if (!petId) return
-
-  try {
-    const response = await getPets()
-    const pet = response.data.find(c => c.id === petId)
-    if (pet) {
-      title.textContent = "LIVE " + pet.commonName.toUpperCase() + " CAMS"
-    }
-  } catch {
-    title.textContent = "Something went wrong. Please, refresh the page"
-  }
+  title.textContent = "LIVE " + petName.toUpperCase() + " CAMS"
 }
 
 function updateMainCamera(petId: number): void {
@@ -138,41 +128,26 @@ function setActiveSidebar(petId: number): void {
 
 }
 async function loadPetDetails(petId: number): Promise<void> {
-  const didSection = document.querySelector(".did")
-  const didLoader = didSection?.querySelector(".loader")
-  // const didText = document.getElementById("didText")
 
-  const animalInfo = document.querySelector(".animal-info")
-  const infoLoader = animalInfo?.querySelector(".loader")
+  const loader = document.getElementById("zooInfoLoader")
+  const content = document.getElementById("zooInfoContent")
+  const error = document.getElementById("zooInfoError")
 
-  didLoader?.classList.remove("hidden")
-  infoLoader?.classList.remove("hidden")
 
   try {
 
     const response = await getPetById(petId)
+    const pet = response.data
 
-    renderPetDetails(response.data)
-    didLoader?.classList.add("hidden")
-    infoLoader?.classList.add("hidden")
+    renderPetDetails(pet)
+    setLiveTitle(pet.commonName)
+    loader?.classList.add("hidden")
+    content?.classList.remove("hidden")
 
   } catch {
 
-    // const didText = document.getElementById("didText")
-
-    // if (didText) {
-    //   didText.textContent =
-    //     "Something went wrong. Please refresh the page"
-    // }
-    if (didSection) {
-      didSection.innerHTML =
-        `<div class="api-error">Something went wrong. Please, refresh the page</div>`
-    }
-
-    if (animalInfo) {
-      animalInfo.innerHTML =
-        `<div class="api-error">Something went wrong. Please, refresh the page</div>`
-    }
+    loader?.classList.add("hidden")
+    error?.classList.remove("hidden")
 
   }
 
@@ -201,8 +176,6 @@ async function loadZooPage(): Promise<void> {
   const loader = liveLayout?.querySelector(".loader")
   loader?.classList.remove("hidden");
   try {
-    await setLiveTitle()
-
     updateMainCamera(petId)
     updateThumbnails(petId)
     setActiveSidebar(petId)
@@ -220,27 +193,29 @@ async function loadZooPage(): Promise<void> {
 }
 
 async function loadSidebar(): Promise<void> {
-  const container = document.getElementById("sidebarList")
-
-  if (!container) return
+  const loader = document.getElementById("zooTopLoader")
+  const content = document.getElementById("zooTopContent")
+  const error = document.getElementById("zooTopError")
 
   try {
 
     const response = await getCameras()
 
-    container.innerHTML = ""
+    const container = document.getElementById("sidebarList")
+    if (!container) return
 
     response.data.forEach(camera => {
       const element = createSidebarItem(camera)
       container.appendChild(element)
     })
-
+    loader?.classList.add("hidden")
+    content?.classList.remove("hidden")
     loadZooPage()
 
   } catch {
 
-    container.innerHTML =
-      `<div class="api-error">Something went wrong. Please refresh the page</div>`
+    loader?.classList.add("hidden")
+    content?.classList.remove("hidden")
 
   }
 }
