@@ -28,3 +28,21 @@ export interface Camera {
 export interface CameraResponse {
   data: Camera[]
 }
+export interface PetDetails {
+  id: number
+  commonName: string
+  scientificName: string
+  type: string
+  size: string
+  diet: string
+  habitat: string
+  range: string
+  latitude: string
+  longitude: string
+  description: string
+  detailedDescription: string
+}
+
+export interface PetDetailsResponse {
+  data: PetDetails
+}

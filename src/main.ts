@@ -1,8 +1,9 @@
-import { getCameras, getFeedback, getPets } from "./api/api"
+import { getCameras, getFeedback, getPetById, getPets } from "./api/api"
 import { zooMedia } from "./data/zooMedia"
 import { createFeedbackCard } from "./render/createFeedbackCard"
 import { createPetCard } from "./render/createPetCard"
 import { createSidebarItem } from "./render/createSidebarItem"
+import { renderPetDetails } from "./render/renderPetDetails"
 import { Slider } from "./slider/slider"
 
 async function init(): Promise<void> {
@@ -136,6 +137,40 @@ function setActiveSidebar(petId: number): void {
   })
 
 }
+async function loadPetDetails(petId: number): Promise<void> {
+
+  try {
+
+    const response = await getPetById(petId)
+
+    renderPetDetails(response.data)
+
+  } catch {
+
+    const didText = document.getElementById("didText")
+
+    if (didText) {
+      didText.textContent =
+        "Something went wrong. Please refresh the page"
+    }
+
+  }
+
+}
+function updateInfoImage(petId: number): void {
+
+  const image = document.getElementById("infoImage") as HTMLImageElement | null
+
+  if (!image) return
+
+  const media = zooMedia[petId]
+
+  if (media) {
+    image.src = media.infoImage
+  }
+
+}
+
 async function loadZooPage(): Promise<void> {
 
   const petId = getPetIdFromUrl()
@@ -145,10 +180,10 @@ async function loadZooPage(): Promise<void> {
   await setLiveTitle()
 
   updateMainCamera(petId)
-
   updateThumbnails(petId)
-
   setActiveSidebar(petId)
+  updateInfoImage(petId)
+  loadPetDetails(petId)
 
 }
 

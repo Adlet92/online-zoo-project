@@ -32,3 +32,12 @@ export async function getCameras(): Promise<CameraResponse> {
 
   return response.json()
 }
+export async function getPetById(id: number) {
+  const response = await fetch(`${BASE_URL}/pets/${id}`)
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch pet")
+  }
+
+  return response.json()
+}
