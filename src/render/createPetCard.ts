@@ -21,6 +21,11 @@ export function createPetCard(pet: Pet): HTMLElement {
       </button>
     </div>
   `
+  const button = card.querySelector(".btn-pets")
+
+  button?.addEventListener("click", () => {
+    window.location.href = `./pages/zoos/zoos.html?petId=${pet.id}`
+  })
 
   return card
 }

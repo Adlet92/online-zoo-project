@@ -7,6 +7,8 @@ import { Slider } from "./slider/slider"
 async function init(): Promise<void> {
   loadPets()
   loadFeedback()
+  loadSidebar()
+  setLiveTitle()
 }
 async function loadPets(): Promise<void> {
   const container = document.getElementById("petsContainer")
@@ -62,8 +64,33 @@ async function loadFeedback(): Promise<void> {
   }
 }
 
-async function loadSidebar(): Promise<void> {
+function getPetIdFromUrl(): number | null {
+  const params = new URLSearchParams(window.location.search)
+  const petId = params.get("petId")
 
+  if (!petId) return null
+
+  return Number(petId)
+}
+async function setLiveTitle(): Promise<void> {
+  const title = document.querySelector(".live-title")
+  if (!title) return
+
+  const petId = getPetIdFromUrl()
+  if (!petId) return
+
+  try {
+    const response = await getPets()
+    const pet = response.data.find(c => c.id === petId)
+    if (pet) {
+      title.textContent = "LIVE " + pet.commonName.toUpperCase() + " CAMS"
+    }
+  } catch {
+    title.textContent = "Something went wrong. Please, refresh the page"
+  }
+}
+
+async function loadSidebar(): Promise<void> {
   const container = document.getElementById("sidebarList")
 
   if (!container) return
