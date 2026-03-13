@@ -5,7 +5,8 @@ export function createSidebarItem(camera: Camera): HTMLElement {
 
   const item = document.createElement("a")
   item.className = "sidebar-item-decoration"
-  item.href = "#"
+  item.dataset.petId = String(camera.petId)
+  // item.href = "#"
 
   const image = cameraImages[camera.petId]
 

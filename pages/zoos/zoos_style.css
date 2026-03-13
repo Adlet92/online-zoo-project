@@ -301,6 +301,7 @@ body {
 .cam img{
   width:100%;
   border-radius:6px;
+  max-height: 138px;
 }
 
 .cam span{

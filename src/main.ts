@@ -1,4 +1,5 @@
 import { getCameras, getFeedback, getPets } from "./api/api"
+import { zooMedia } from "./data/zooMedia"
 import { createFeedbackCard } from "./render/createFeedbackCard"
 import { createPetCard } from "./render/createPetCard"
 import { createSidebarItem } from "./render/createSidebarItem"
@@ -90,6 +91,67 @@ async function setLiveTitle(): Promise<void> {
   }
 }
 
+function updateMainCamera(petId: number): void {
+  const mainImage = document.querySelector(".live-main img")
+  if (!mainImage) return
+  const media = zooMedia[petId]
+  if (media) {
+    mainImage.setAttribute("src", media.main)
+  }
+
+}
+function updateThumbnails(petId: number): void {
+
+  const cams = document.querySelectorAll(".live-cams .cam img")
+
+  const media = zooMedia[petId]
+
+  if (!media) return
+
+  cams.forEach((img, index) => {
+    if (media.thumbnails[index]) {
+      img.setAttribute("src", media.thumbnails[index])
+    }
+  })
+
+}
+function setActiveSidebar(petId: number): void {
+
+  const items = document.querySelectorAll(".sidebar-item-decoration")
+
+  items.forEach(item => {
+
+    const id = Number((item as HTMLElement).dataset.petId)
+
+    const animal = item.querySelector(".animal")
+
+    if (id === petId) {
+      item.classList.add("active")
+      animal?.classList.add("active")
+    } else {
+      item.classList.remove("active")
+      animal?.classList.remove("active")
+    }
+
+  })
+
+}
+async function loadZooPage(): Promise<void> {
+
+  const petId = getPetIdFromUrl()
+
+  if (!petId) return
+
+  await setLiveTitle()
+
+  updateMainCamera(petId)
+
+  updateThumbnails(petId)
+
+  setActiveSidebar(petId)
+
+}
+
 async function loadSidebar(): Promise<void> {
   const container = document.getElementById("sidebarList")
 
@@ -105,6 +167,8 @@ async function loadSidebar(): Promise<void> {
       const element = createSidebarItem(camera)
       container.appendChild(element)
     })
+
+    loadZooPage()
 
   } catch {
 
