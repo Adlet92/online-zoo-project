@@ -83,10 +83,6 @@ export function initSignIn(): void {
         password: password.value
       })
 
-      // localStorage.setItem("token", response.token)
-      // localStorage.setItem("user", JSON.stringify(response.user))
-      localStorage.setItem("token", response.token)
-
       window.location.href = "/index.html"
 
     } catch {

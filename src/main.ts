@@ -10,9 +10,9 @@ import { renderPetDetails } from "./render/renderPetDetails"
 import { Slider } from "./slider/slider"
 
 async function init(): Promise<void> {
+  await initUserMenu()
   initSignIn()
   initRegister()
-  initUserMenu()
   loadPets()
   loadFeedback()
   loadSidebar()

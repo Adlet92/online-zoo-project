@@ -3,10 +3,6 @@ type User = {
   email: string
 }
 
-// export function getUser(): User | null {
-//   const data = localStorage.getItem("user")
-//   return data ? JSON.parse(data) : null
-// }
 export async function getUser(): Promise<User | null> {
 
   const token = localStorage.getItem("token")
@@ -20,11 +16,16 @@ export async function getUser(): Promise<User | null> {
     }
   })
 
+   if (response.status === 401) {
+    localStorage.removeItem("token")
+    return null
+  }
+
   if (!response.ok) return null
 
-  const data = await response.json()
+  const result = await response.json()
 
-  return data
+  return result.data
 }
 
 export function logout(): void {
@@ -74,6 +75,11 @@ export async function loginUser(data: {
   if (!response.ok) {
     throw new Error("Incorrect login or password")
   }
+  const result = await response.json()
+  console.log("LOGIN DATA:", result.data)
+  console.log("LOGIN user:", result.data.user)
 
-  return response.json()
+  localStorage.setItem("token", result.data.access_token)
+
+  return result
 }

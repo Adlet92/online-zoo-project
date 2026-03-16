@@ -1,6 +1,7 @@
 import { getUser, logout } from "./auth"
 
-export function initUserMenu(): void {
+
+export async function initUserMenu(): Promise<void> {
 
   const button = document.getElementById("userButton")
   const popup = document.getElementById("userPopup")
@@ -8,7 +9,8 @@ export function initUserMenu(): void {
 
   if (!button || !popup) return
 
-  const user = getUser()
+  const user = await getUser()
+  console.log("user info", user);
 
   if (user) {
 
