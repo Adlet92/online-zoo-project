@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="./assets/images/landing_page/Favicon.png">
-  <script type="module" crossorigin src="/assets/main-BhgnT2Tx.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-CmD8A2cY.css">
+  <script type="module" crossorigin src="/assets/main-oL768Fz8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BgGFTXg6.css">
 </head>
 
 <body>
@@ -41,6 +41,15 @@
             </a>
           </li>
         </ul>
+        <div class="user-menu">
+          <button id="userButton" class="user-button">
+            <img src="/assets/user_icon-BWFAPeMs.png" alt="User">
+            <span id="userName"></span>
+          </button>
+          <div id="userPopup" class="user-popup hidden-popup">
+          </div>
+
+        </div>
       </nav>
     </div>
   </header>
@@ -69,12 +78,12 @@
         animals are not always on view on cameras, so please check back if you don't see anything.</p>
     </div>
     <div class="welcome-image">
-      <img src="../assets/images/landing_page/Welcome.png" alt="Zoo Entrance" />
+      <img src="/assets/Welcome-BadTidu4.png" alt="Zoo Entrance" />
     </div>
   </section>
   <section class="how-we-work container">
     <div class="how-image">
-      <img src="../assets/images/landing_page/Eagles.png" alt="Eagles" />
+      <img src="/assets/Eagles-CGaXbuR6.png" alt="Eagles" />
     </div>
     <div class="how-text">
       <h2 class="zoo-h2">How We Work</h2>
@@ -97,7 +106,7 @@
         <div class="donate-input-group">
           <input type="text" placeholder="$ Donation Amount" />
           <button class="btn-donation">
-            <img src="../assets/images/landing_page/Union.png" alt="Union" class="btn-union" />
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVHgBxZbhDcIgFIQPJ3AU3cQR3KTtBB2h3YARiBPoBh3BEZ6HNlFJY8Bw7ZdcgD/vC5AXAAoxsxNzZyZmDwUs7O3NNUe0QzmXj/mBCZIdsWhr3wQoWBANULCmaExEPRQsiBoo+CmKi7m5FDxFLgo4ajr3xfGfZiwmSjro6JxzN9SCxz4k99GiJmsIerWgSQQjarKFwKMmLHhOBFmvY6nESwWzJH4kJibkCh5YA6Vppg8UGQAAAABJRU5ErkJggg==" alt="Union" class="btn-union" />
           </button>
         </div>
       </div>
@@ -110,10 +119,10 @@
       donation is used. </h3>
     <div class="arrows">
       <div class="arrow-left" id="petsLeft">
-        <img src="./assets/images/landing_page/left_union.png" alt="left">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAU9JREFUeAG9lU1OwkAYht+vg0l1Ne7YSMYbyM6YYGDHLcQTGE4g3IAbiEuXnoD6E8NObuCIex1XNDFm/CCVtBXpDy3PaubtNE/fdKYVSIGSp5dyt+bJPQUze71DRihpwVwAsr3fuf54SLwnjoMMAlgMkYNKagFows/URQ4otcA6LW08gyIkLLhgwSAUaVhRzyv4I2HBGQuGUcEXNxhrbACVLVhKlDw5AonnMgQLSSAY8ViiaIgG+v2+S2q/8cJThbKw3/X5YSy+QQRHOmxq8Sj39lwL4VqbR28rL37x7dLmiU80zkO5Au2MlDxWKIDYYWx0OLkKRYU0EuGJ8acT6R588tZrB5EEVZrSPbwxvvaRExEPjP82lm6NWNQMoiq3a28iEqtCbuQVKRL/XVgpcmzVzKa3yMjaPyPv8R6s7S8Diw5yIJIWRBqR7XMTDxn5Aa6Pl2RgRyBTAAAAAElFTkSuQmCC" alt="left">
       </div>
       <div class="arrow-right" id="petsRight">
-        <img src="./assets/images/landing_page/right_union.png" alt="right">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAUtJREFUeAG11r9SgzAcB/DfDxx6nWInJ4lv0G4s9HB0Up9AfAPfQHgCH6HXN6ijk631PMc+Qoo7ZqMONgaoCtzxJzT9DlwICZ8LCQQExVDiXAHCRBY5CHPE+Jw39TFANShu5JEkHuD2mRKXNHVRR4RY5E6GbSATFMM3H++kd4qA6O6qTuTobL4Jp9qQDArnJYiSvkV5HD5qQyqgYRXUGfmD+tZZAvxDlPB4/aQNSaE4nJUgW0Kyfr3QhlRAbh5CSsb3cnXcQbb29QbRZ9FLgPTY+TwI8BvxPVJ/GTvEALEN4FBBETD+tkLQFDpwJiDAKwDRq58WQUPqgCR7zwkdjB/qgLQK9shu+fu5u01ZtPTK7TojbYHskg5AwIzx5XVV+yNQBhyvAACu5NTe1vXpsv1eFgBhnDft88ofSNKzvuRDtuU2LEdgXrT5kfgB4MyNU5wFYUQAAAAASUVORK5CYII=" alt="right">
       </div>
     </div>
     <div class="pet-grid" id="petsContainer">
@@ -130,10 +139,10 @@
           <div class="step-line"></div>
         </div>
         <div class="step-body">
-          <img src="../assets/images/landing_page/monkey.png" alt="" class="step-body-img">
+          <img src="/assets/monkey-CUeb5H22.png" alt="" class="step-body-img">
           <div class="step-content">
             <div class="step-icon">
-              <img src="../assets/images/landing_page/Vector1.png" alt="" class="step-icon-img">
+              <img src="data:image/png;base64,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" alt="" class="step-icon-img">
             </div>
             <h4>Your donation has an impact</h4>
             <p>
@@ -152,10 +161,10 @@
           <div class="step-line"></div>
         </div>
         <div class="step-body">
-          <img src="../assets/images/landing_page/banana.png" alt="Banana">
+          <img src="/assets/banana-BmD1Ss2A.png" alt="Banana">
           <div class="step-content">
             <div class="step-icon">
-              <img src="../assets/images/landing_page/Vector2.png" alt="">
+              <img src="data:image/png;base64,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" alt="">
             </div>
             <h4>Make a donation</h4>
             <p>
@@ -173,10 +182,10 @@
           <div class="step-line"></div>
         </div>
         <div class="step-body">
-          <img src="../assets/images/landing_page/Rectangle 38.png" alt="Feeding">
+          <img src="/assets/Rectangle%2038-I_k9OLMX.png" alt="Feeding">
           <div class="step-content">
             <div class="step-icon">
-              <img src="../assets/images/landing_page/Vector3.png" alt="">
+              <img src="data:image/png;base64,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" alt="">
             </div>
             <h4>Bring your food charity — straight to your favorite pets</h4>
             <p>
@@ -191,7 +200,7 @@
       <div class="feed-button-class">
         <button class="feed-btn">
           <span class="hero-span">Donate Now</span>
-          <img src="../assets/images/landing_page/Union.png" alt="Union" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVHgBxZbhDcIgFIQPJ3AU3cQR3KTtBB2h3YARiBPoBh3BEZ6HNlFJY8Bw7ZdcgD/vC5AXAAoxsxNzZyZmDwUs7O3NNUe0QzmXj/mBCZIdsWhr3wQoWBANULCmaExEPRQsiBoo+CmKi7m5FDxFLgo4ajr3xfGfZiwmSjro6JxzN9SCxz4k99GiJmsIerWgSQQjarKFwKMmLHhOBFmvY6nESwWzJH4kJibkCh5YA6Vppg8UGQAAAABJRU5ErkJggg==" alt="Union" />
         </button>
       </div>
     </div>
@@ -211,10 +220,10 @@
         </div>
         <div class="arrows-testimonials">
           <div class="arrows-testimonials-left" id="feedbackLeft">
-            <img src="./assets/images/landing_page/right_union_2.png" alt="right">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAK1JREFUeAHFluENwiAUhA8ncBTdxBHcpO0EHaHdgBGIE+gGHcERnoc2UUljwHDtl1yAP+8LkBcACjGzE3NnJmYPBSzs7c01R7RDOZeP+YEJkh2xaGvfBChYEA1QsKZoTEQ9FCyIGij4KYqLubkUPEUuCjhqOvfF8Z9mLCZKOujonHM31ILHPiT30aImawh6taBJBCNqsoXAoyYseE4EWa9jqcRLBbMkfiQmJuQKHlgDpWmmDxQZAAAAAElFTkSuQmCC" alt="right">
           </div>
           <div class="arrows-testimonials-right" id="feedbackRight">
-            <img src="./assets/images/landing_page/left_union_2.png" alt="left">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAJZJREFUeAHd1eENQDAQhuGvJjCCERjBJGzABmxgBLGJDYxgBDY4VyJpmkpE7vrDmxS/PE3atMCLiKijqw4aOcAZpPMBboRkAWDhkUKqGEDjAas0UAWADFLFAPIYwEY6DdYwdtb8zqBXkfBDbueESy1S8tih02SMmc8v9YW/45/Wv4NaD5I9txyo/z0ke2k9QdDKgXp86ABzk8svnbqJyQAAAABJRU5ErkJggg==" alt="left">
           </div>
         </div>
       </div>
@@ -222,7 +231,7 @@
     <div class="container">
       <button class="btn-testimonials">
         <span class="btn-testimonials-span">leave feedback</span>
-        <img src="../assets/images/landing_page/Union.png" alt="Union" />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVHgBxZbhDcIgFIQPJ3AU3cQR3KTtBB2h3YARiBPoBh3BEZ6HNlFJY8Bw7ZdcgD/vC5AXAAoxsxNzZyZmDwUs7O3NNUe0QzmXj/mBCZIdsWhr3wQoWBANULCmaExEPRQsiBoo+CmKi7m5FDxFLgo4ajr3xfGfZiwmSjro6JxzN9SCxz4k99GiJmsIerWgSQQjarKFwKMmLHhOBFmvY6nESwWzJH4kJibkCh5YA6Vppg8UGQAAAABJRU5ErkJggg==" alt="Union" />
       </button>
     </div>
   </section>
@@ -235,7 +244,7 @@
     </div>
     <div class="care-grid">
       <div class="care-big">
-        <img src="../assets/images/landing_page/koala2.png" alt="Koala" />
+        <img src="/assets/koala2-CtlLZXdi.png" alt="Koala" />
       </div>
       <a href="./pages/zoos/zoos.html" class="care-card-a">
         <div class="care-card">
@@ -244,30 +253,30 @@
             <p>Your $30 could give Lucas a slice of panda cake, made with our secret recipe.</p>
             <button class="btn-feed">
               <span class="btn-feed-span">Feed</span>
-              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF+SURBVHgBvZXtbcIwEIZfux8SgrZ0g8AE7QZlkoYN2CCXCdoNoBu0GzACCxS8AZFaoKoE1zMQKYlCCcbwSPkRy+dHd3HuAEdmcTuaUYvn1H45JE7BgQUFwQpqkjlmUKdxt0qshgM/QILNs4XDqpk6Ce/JJAzuZKXy3ltImffFOgktDTKjJThXxhUz7ZM6Cy23ZN75QKnTpSnyTUGooPrZNa0U1aJxXNx7VIYpUt7BCpw73GY6j4Jeca+XDFO+KCANlSunVjqsRZ9vJxFWkaopBQ/Xm/o34Y+guCAl79yQGSppT5OyDScg+QW39JlkluYF8KQZGOIMyGUxV8Do8kJ+3CXQU9B38AaHRZmSb1gjY7zf0hm1+1lhVrZ9P51MSDT4MZVZvHSatWzdP/MyzmSW4iXDtUxaWVFmJ0px79EZlsgE7pbJjhaWyey4qsvY2hXjXNJdMjs5/otzEkr/bUr/neZXOZbMaF+sp1taTWZxLqmd8hL+LGX9aMTmtWrcH0wlsYY9rNVaAAAAAElFTkSuQmCC" alt="Union" />
             </button>
           </div>
         </div>
       </a>
       <div class="care-card">
-        <img src="../assets/images/landing_page/tiger2.png" alt="Tiger" />
+        <img src="/assets/tiger2-D_UmarJZ.png" alt="Tiger" />
         <div class="care-info">
           <p> Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.</p>
           <button class="btn-feed">
             <span class="btn-feed-span">Feed</span>
-            <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF+SURBVHgBvZXtbcIwEIZfux8SgrZ0g8AE7QZlkoYN2CCXCdoNoBu0GzACCxS8AZFaoKoE1zMQKYlCCcbwSPkRy+dHd3HuAEdmcTuaUYvn1H45JE7BgQUFwQpqkjlmUKdxt0qshgM/QILNs4XDqpk6Ce/JJAzuZKXy3ltImffFOgktDTKjJThXxhUz7ZM6Cy23ZN75QKnTpSnyTUGooPrZNa0U1aJxXNx7VIYpUt7BCpw73GY6j4Jeca+XDFO+KCANlSunVjqsRZ9vJxFWkaopBQ/Xm/o34Y+guCAl79yQGSppT5OyDScg+QW39JlkluYF8KQZGOIMyGUxV8Do8kJ+3CXQU9B38AaHRZmSb1gjY7zf0hm1+1lhVrZ9P51MSDT4MZVZvHSatWzdP/MyzmSW4iXDtUxaWVFmJ0px79EZlsgE7pbJjhaWyey4qsvY2hXjXNJdMjs5/otzEkr/bUr/neZXOZbMaF+sp1taTWZxLqmd8hL+LGX9aMTmtWrcH0wlsYY9rNVaAAAAAElFTkSuQmCC" alt="Union" />
           </button>
         </div>
       </div>
       <a href="./pages/zoos/lemur.html" class="care-card-a">
         <div class="care-card">
-          <img src="../assets/images/landing_page/lemur2.png" alt="Lemur" />
+          <img src="/assets/lemur2-B0BMD7Kf.png" alt="Lemur" />
           <div class="care-info">
             <p>With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its
               natural habitat.</p>
             <button class="btn-feed">
               <span class="btn-feed-span">Feed</span>
-              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF+SURBVHgBvZXtbcIwEIZfux8SgrZ0g8AE7QZlkoYN2CCXCdoNoBu0GzACCxS8AZFaoKoE1zMQKYlCCcbwSPkRy+dHd3HuAEdmcTuaUYvn1H45JE7BgQUFwQpqkjlmUKdxt0qshgM/QILNs4XDqpk6Ce/JJAzuZKXy3ltImffFOgktDTKjJThXxhUz7ZM6Cy23ZN75QKnTpSnyTUGooPrZNa0U1aJxXNx7VIYpUt7BCpw73GY6j4Jeca+XDFO+KCANlSunVjqsRZ9vJxFWkaopBQ/Xm/o34Y+guCAl79yQGSppT5OyDScg+QW39JlkluYF8KQZGOIMyGUxV8Do8kJ+3CXQU9B38AaHRZmSb1gjY7zf0hm1+1lhVrZ9P51MSDT4MZVZvHSatWzdP/MyzmSW4iXDtUxaWVFmJ0px79EZlsgE7pbJjhaWyey4qsvY2hXjXNJdMjs5/otzEkr/bUr/neZXOZbMaF+sp1taTWZxLqmd8hL+LGX9aMTmtWrcH0wlsYY9rNVaAAAAAElFTkSuQmCC" alt="Union" />
             </button>
           </div>
         </div>
@@ -275,12 +284,12 @@
 
       <a href="./pages/zoos/eagle.html" class="care-card-a">
         <div class="care-card">
-          <img src="../assets/images/landing_page/eagels2.png" alt="Eagles" />
+          <img src="/assets/eagels2-Cmbs_XK5.png" alt="Eagles" />
           <div class="care-info">
             <p>Sam & Lora have hatched and raised numerous young and will be happy with your help. </p>
             <button class="btn-feed">
               <span class="btn-feed-span">Feed</span>
-              <img src="../assets/images/landing_page/Union_orange.png" alt="Union" />
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF+SURBVHgBvZXtbcIwEIZfux8SgrZ0g8AE7QZlkoYN2CCXCdoNoBu0GzACCxS8AZFaoKoE1zMQKYlCCcbwSPkRy+dHd3HuAEdmcTuaUYvn1H45JE7BgQUFwQpqkjlmUKdxt0qshgM/QILNs4XDqpk6Ce/JJAzuZKXy3ltImffFOgktDTKjJThXxhUz7ZM6Cy23ZN75QKnTpSnyTUGooPrZNa0U1aJxXNx7VIYpUt7BCpw73GY6j4Jeca+XDFO+KCANlSunVjqsRZ9vJxFWkaopBQ/Xm/o34Y+guCAl79yQGSppT5OyDScg+QW39JlkluYF8KQZGOIMyGUxV8Do8kJ+3CXQU9B38AaHRZmSb1gjY7zf0hm1+1lhVrZ9P51MSDT4MZVZvHSatWzdP/MyzmSW4iXDtUxaWVFmJ0px79EZlsgE7pbJjhaWyey4qsvY2hXjXNJdMjs5/otzEkr/bUr/neZXOZbMaF+sp1taTWZxLqmd8hL+LGX9aMTmtWrcH0wlsYY9rNVaAAAAAElFTkSuQmCC" alt="Union" />
             </button>
           </div>
         </div>
@@ -291,21 +300,21 @@
     <div class="care-btn-container">
       <button class="care-btn">
         <span class="care-btn-span">Choose Your Favourite</span>
-        <img src="./assets/images/landing_page/union_black_white.svg" alt="Union" />
+        <img src="data:image/svg+xml,%3csvg%20width='25'%20height='22'%20viewBox='0%200%2025%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.2098%200.119971C13.0277%200.199174%2012.8622%200.315255%2012.7229%200.461565C12.5833%200.607505%2012.4725%200.780876%2012.397%200.971748C12.3214%201.16262%2012.2825%201.36724%2012.2825%201.57389C12.2825%201.78055%2012.3214%201.98517%2012.397%202.17604C12.4725%202.36691%2012.5833%202.54028%2012.7229%202.68622L18.7506%209H1.6C1.17565%209%200.768688%209.21071%200.468629%209.58579C0.168571%209.96086%200%2010.4696%200%2011C0%2011.5304%200.168571%2012.0391%200.468629%2012.4142C0.768688%2012.7893%201.17565%2013%201.6%2013H18.7514L12.7229%2019.3146C12.4414%2019.6096%2012.2833%2020.0097%2012.2833%2020.4269C12.2833%2020.8441%2012.4414%2021.2443%2012.7229%2021.5393C13.0045%2021.8343%2013.3863%2022%2013.7845%2022C14.1826%2022%2014.5645%2021.8343%2014.846%2021.5393L23.842%2012.1127C23.9816%2011.9668%2024.0924%2011.7934%2024.168%2011.6026C24.2436%2011.4117%2024.2825%2011.2071%2024.2825%2011.0004C24.2825%2010.7938%2024.2436%2010.5891%2024.168%2010.3983C24.0924%2010.2074%2023.9816%2010.034%2023.842%209.88808L14.846%200.461565C14.7067%200.315255%2014.5413%200.199174%2014.3591%200.119971C14.177%200.0407677%2013.9817%200%2013.7845%200C13.5873%200%2013.392%200.0407677%2013.2098%200.119971Z'%20fill='%2320113D'/%3e%3c/svg%3e" alt="Union" />
       </button>
     </div>
 
   </section>
 
   <section class="care-video container">
-    <img src="../assets/images/landing_page/Touch_the_animal.png" alt="Zoo Online Video" />
+    <img src="/assets/Touch_the_animal-BLNAJgwA.png" alt="Zoo Online Video" />
   </section>
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-logos">
-        <img src="./assets/images/landing_page/zoo_logo_white.png" alt="Online Zoo" />
-        <img src="./assets/images/landing_page/Yem Digital.png" alt="Logo 2" />
-        <img src="./assets/images/landing_page/rs_school_js logo.png" alt="Logo 3" />
+        <img src="data:image/png;base64,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" alt="Online Zoo" />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA/9JREFUeAHdWu912jAQP+f1e9kg2qB0gjgb0AkCE4RMAJkAdwLoBOkGphNAJpAzQegE17v4FIRjS2djIK+/9+7JTu5OOkn3RzIJ9ARENNSkRN+kHXjkUAhtiZ6J1kmSFHBp0OAHRDMii91hiRYyEWc3ICXKsX8sz2IQd0L0hKfH8mQGkeJ7olc8HyzRGPoElnv4UlhoxphEDOCIkxMN4bLgKHdLEW7XxNBoyCcywiFoTMiQDXQzgjtaE71I5z4MHOaZttiSId/V3B19IidKW/TBIXyF7VHrM0lNB2NqlqDHmmjiZ2gxiFfzGvYzzyvEPDyrW4/XUDMnugM9HkhH1vhfLPOEVc4Mh+JpRXaBuhBtsZIr6HmE7fo2IUOWSkXWKcKyTDkmPM86TuRTaDU0sLg3ok3Hp9CZHrMaxpOZYn+oblPNFs27rsa0ZgIyPB5Zjd5UKTtoO5gNNACPq4RDejUF6twXsAqBNNDhALv5isVA9EHdTrFtmHOIAPX72iEcQtutyvUVlOVCDL9iDJIQf4AeE+Ux96eC51brH28OhYrzAeoi2Vyh5857jq10pnHUXJQN5d0oBpEFO43Lu1wylPfY9trw1jIRvYW0ji9ah9GW4TC9btA1hzhm0l8q788R/oHGkBdpXUnP8X0EcbC/FN47PwcPRwxZhbG8Gk82hDdDYthVlDK4tgqeJ2TAtyL/9qx0br+G+go6tDLEhyGaxgRl4BOiR40RWAYTAx3wBcqBhmbXSFs16BoUIAN+gx6m8v4XlOAV2UV43IAL72/8/AA9g4yew+HxuJDWREQLjSHOydfSuv0ek+sKP0g4o24iMkXbhPiqjFhHQXLWxntXJcQxxjEVhQbOBNwnw5FifGNt0djGYfs2SLNjzJWExSKi7xWUwPKkuQj8f8Y8oEfMF4v30E6K5wFrLerqKz6T5J5cWsPjn/o2GEmqnl4bGF9WZa6D9sxgZGDVCRhUeCx2myQTMMZUmfMapmiEinSy8PiWDTxWaUxaI7vUMM5BAYyX2Bx17iM8Kp/Bj2cd4/6XVAdFDa/CmugRyiDgf9B0z+yAW+dkYvSsof+dJ1uHR8nobgxDj3cHH52dx8g8K5Kb1GrEdudui96JUWRXqLuE4D4yPLwj4x2Row4WK9ux7hKbk5/qK5GAc8xDwyW2gX0pzgUg8/BKriu8vJop6MHn/VWUC7tduuWoLF+wjJIj7HYfltXpPOWHHj6eFnBYwTLdiN5oDqlB44ee///TG+MTGRM0Qg3s56K6KzLoE1iW+xbPh4MvYn0b43LFqcHVgoFT44QG5djiy3DfBrH/WOwOi+Uxoks4fkcCPQH3PzzjCMc/CjBwePux8+gPlJGotx+e/QPKpblw+oHamgAAAABJRU5ErkJggg==" alt="Logo 2" />
+        <img src="data:image/png;base64,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" alt="Logo 3" />
       </div>
       <nav class="footer-menu">
         <a href="../../index.html">ABOUT</a>
@@ -324,15 +333,15 @@
       </div>
       <div class="footer-social">
         <a href="https://www.youtube.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/landing_page/YouTube.png" alt="YouTube" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJgSURBVHgBzZnxdbIwFMUfPd//xQ1wAt3gsxPUEegEsoF2Au0E0A26gToBdALsBNAJXt8zpHhaEkJMsPecazwN1p83IXnGACyFAAtq5uT/TRs2ZtXkU+N38iEgg28RVEhekysyDnRJTskRuFYDtrWAUtkdKP2jlWViJonGcI0cp6byFoaqGdL9CHDSObY3mBFgPiKc9N4Ubovjw5kNN0/aG8JJJyq4CMWddWtAXjHCLsD0D8D9GupApkdNqRz7xQLg8ZGuosvCULRSl8+7dDqJtq5b899eXtq+bk0CsWX2pJem6E1JoktxAxfDW3ZeFMfoVVWFGIbKuchsdyiqkqgz5PkcvIqnC08fRS+z3YEA7NZsBt6ln8NzBrye4vm5b8KrpQc8JxhZvrjV4QAwnQI8PQ0Hvb/X9c7cAEplGcDDA8Drq/lrJhNdb8iA5lWEiTjBOBaJcrJ90id4BvSj0M3nZsAaXIrBtrRT5bluCWmln7O1HrAeyL5a0ZJPO2aSgCOdGLBQdpsCclKc2G43fGg/PrS9/+jhSF7CNYDrNVhL/x6FPsHjEbyrKHS9h/Mjqr5WLpfoXepioS3/uLRRlj1Zht602ejKrZTZZMHKM7tSBs0LL1c2sniQOwzfEH03xeUyws/Zn58Ab299C/k0EGc73ynuPJTutk5/4aKovyoEwBu7RFV9QB3JHwCMQacbD/UOTITjnstI52AqFPNxzPOZPdqUfSMNt9mwaiD5vKb0AMYrhpuyB8W5TeYyNXRdyf8AtUmUE9sMBQvAUii+T7N5/4saX/4MweZShUuiwvZniC9qRKyvfOKpcwAAAABJRU5ErkJggg==" alt="YouTube" />
         </a>
 
         <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/landing_page/Instagram.png" alt="Instagram" />
+          <img src="data:image/png;base64,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" alt="Instagram" />
         </a>
 
         <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/landing_page/Facebook.png" alt="Facebook" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBzZlNSFRRFMf/5zqaWcJEBdkHTYuIomikjTV9TNu+KCLS2lQE6SLGlkWQEUQ7rRZNqyQohYKKDNr5Ii13TmC4sMWYlYEKI4ofY77TvU/fMF+Ob96M4/tt3nv3Xp3/nHvueeecIdikqvqJn4i9BHFEPnrlvRtMbmOSOAIWYQaHwfxNB7Su1joNNqBsFvtPP3NHy6IBgl4fE2OdsPw0bVbnu1Js2OofWRKohM2sjN4BuB75gNBsVWjRYgv2XwgGuPjfW3nrR/7wCqLTW3YfHx3o+RDKtDCjBX01TxvzZrWFEGjqfFF7Y6HptALntnT6DfJrtQxQqHiy5Kj29nIkeUakWy79rR0FE6dg77xBUkgROL+tXhQev+9isDF5MOGQHKh+cokID7BcMKo27zk5+qunrcscivmgDLweebLa5YAHNrlydh8qd27Eds9arC5bgfGJaQwOjaO79zcePf9q8b9QRPrjNtMfXeZwkaA78ht4YJNbtX4cO7wjYUyJ3L51Tqh12D2zalrGXBgn2/BBZT0p7hJscmifJ0VcPH3hEWSFjnoVSWAKNKyXA5W7NqaMDQ6Pya0dRF//CH70DyNbomVTRvw1tpgZ/qxeyklsWF+e8Px3aAznAi+RC8QiIC8NwshKcjgYinLpa/Eo6+UOuw9KbUIUNCBnxywJrwsk9qoAZIdXDy8Y1/JVJQnjKtSYc4r7wXbDH7OFWPe7ctneiiTfszpnFSLaK0C6B0vM+EQU9iC3y0ZmHMM8DBXrypMETWMsTpR9gewmX03QngPG8fj2KRkLK2LP3b1/cP3ee+QDYRQ4joUigpmcK5A4LFQ2C4fCOvcLxuwnOJeQKGLnWlBuryY6VMXvzIMSVtqMdIt1PITTYGjqYggsKZ1qgsOYBd9VV0Og1nwjIt/JzrEio9lsi8TKTteKyQaH+GLYtJ4iIZH2nX9aD8GNWEaY+fKX1rpm8zmhLh743ta1dc+JNfK2CsuAcrPO1roHSWOp+KplhkmFzrQp1NlyrTJ5NG1vprh08kyBX4Gaah6lm8hYzB2sCTbJXCyAJURta0dL7YItvowNzJ89bR9lk7Ff5t6yFw3biW16ZSpiiJudLbUNmZYt2mFVHdBNu4+/k76wRglFHlBWK54sPfP59VXNwlrrqBaJ/EYNTHQk62JLWozkK9U1VdqUrlGZF4HxqKJaVzW1rLwI5DGKr7ifIeYT4RBD/6Qypg6bP0P8Bx/yRq0EQIfSAAAAAElFTkSuQmCC" alt="Facebook" />
         </a>
       </div>
     </div>
@@ -340,11 +349,11 @@
   <div class="donation-overlay" id="donationOverlay">
     <div class="donation-popup">
       <button class="popup-close" id="popupClose">
-        <img src="./assets/images/popup/popup_close_button.png" alt="Close">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAKJJREFUeAG11UsKwCAMBNDQi+vNp9hS0OIn0ZlZRuEtTKIBSHiTTJzGQhsZXqFPSiGr8T9azO9Ahg/R6gIdX6IK3I0y8TDKwLfRE/wY3cFpaASnox5chs5wOTrB9egCzxbMZfHAWeOl86bdhlOjGeovdda9MhyOkaHjCMwpDcfGcjjGcbCRtnEQ1mAYZ6BhnIm6cQW6xJXoFFejI7wuZBOntm7YXQE7P6x+jQAAAABJRU5ErkJggg==" alt="Close">
       </button>
 
       <div class="popup-image">
-        <img src="./assets/images/popup/popup_image.png" alt="Donate">
+        <img src="/assets/popup_image-B3ScH3jK.png" alt="Donate">
       </div>
 
       <div class="popup-content">

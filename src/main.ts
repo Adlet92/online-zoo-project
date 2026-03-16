@@ -1,4 +1,7 @@
 import { getCameras, getFeedback, getPetById, getPets } from "./api/api"
+import { initRegister } from "./auth/register"
+import { initSignIn } from "./auth/signin"
+import { initUserMenu } from "./auth/userMenu"
 import { zooMedia } from "./data/zooMedia"
 import { createFeedbackCard } from "./render/createFeedbackCard"
 import { createPetCard } from "./render/createPetCard"
@@ -7,6 +10,9 @@ import { renderPetDetails } from "./render/renderPetDetails"
 import { Slider } from "./slider/slider"
 
 async function init(): Promise<void> {
+  initSignIn()
+  initRegister()
+  initUserMenu()
   loadPets()
   loadFeedback()
   loadSidebar()
