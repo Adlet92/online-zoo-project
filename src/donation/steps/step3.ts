@@ -1,5 +1,4 @@
 import { state } from "../donationState"
-import { showNotification } from "../utils/notifications"
 import { saveCard } from "../utils/storage"
 import { isValidCardNumber, isValidCVV } from "../utils/validators"
 
@@ -140,6 +139,8 @@ export function initStep3() {
       saveCard: state.saveCard
      }
 
+    console.log("Submitting donation:", payload)
+
     try {
       const response = await fetch(`${BASE_URL}/donations`, {
         method: 'POST',
@@ -147,7 +148,20 @@ export function initStep3() {
         body: JSON.stringify(payload)
       })
 
-      if (!response.ok) throw new Error()
+      const data = await response.json().catch(() => null)
+      console.log("Response status:", response.status)
+      console.log("Response data:", data)
+
+    // ❗ handle API error message
+      if (!response.ok) {
+          throw new Error(
+            data?.error ||
+            data?.message ||
+            `Server error (${response.status})`
+          )
+        }
+
+      // if (!response.ok) throw new Error()
 
       if (state.saveCard) {
         saveCard({
@@ -157,14 +171,53 @@ export function initStep3() {
         })
       }
 
-      showNotification(
-        `Thank you for your donation of $${state.amount} to ${state.pet}!`
+      // showNotification(
+      //   `Thank you for your donation of $${state.amount} to ${state.pet}!`
+      // )
+      showSuccess(
+        data?.data?.message ||
+        `Thank you for your donation of $${state.amount} to ${state.pet?.name}!`
       )
 
     } catch {
-      showNotification(
+      showSuccess(
         "Something went wrong. Please, try again later."
       )
     }
   })
+}
+
+function showSuccess(message: string) {
+  const step3 = document.querySelector('.donation-step.step-3') as HTMLElement
+  const body = step3?.querySelector('.donation-body') as HTMLElement
+
+  if (!step3 || !body) return
+
+  body.innerHTML = `
+    <div class="success-container">
+      <div class="success-content">
+        <h3>Thank You!</h3>
+        <p class="success-message">${message}</p>
+
+        <button class="close-btn">Close</button>
+      </div>
+    </div>
+  `
+
+  const closeBtn = body.querySelector('.close-btn') as HTMLButtonElement
+
+  closeBtn.onclick = () => {
+    closeDonationModal()
+  }
+
+  // auto-close after 3 seconds
+  setTimeout(() => {
+    closeDonationModal()
+  }, 3000)
+}
+function closeDonationModal() {
+  const modal = document.querySelector('.donation-modal') as HTMLElement
+  if (modal) {
+    modal.classList.add('hidden')
+  }
 }
