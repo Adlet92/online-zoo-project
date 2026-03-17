@@ -10,7 +10,6 @@ export async function initUserMenu(): Promise<void> {
   if (!button || !popup) return
 
   const user = await getUser()
-  console.log("user info", user);
 
   if (user) {
 

@@ -1548,6 +1548,17 @@ body.modal-open {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.next-btn:disabled,
+.next-btn-step-3:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+}
 .back-btn{
   display: flex;
   flex-direction: row;

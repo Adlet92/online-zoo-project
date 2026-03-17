@@ -41,3 +41,4 @@ export async function getPetById(id: number) {
 
   return response.json()
 }
+

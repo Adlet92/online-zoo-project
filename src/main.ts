@@ -3,6 +3,7 @@ import { initRegister } from "./auth/register"
 import { initSignIn } from "./auth/signin"
 import { initUserMenu } from "./auth/userMenu"
 import { zooMedia } from "./data/zooMedia"
+import { initDonationModal } from "./donation/initDonationModal"
 import { createFeedbackCard } from "./render/createFeedbackCard"
 import { createPetCard } from "./render/createPetCard"
 import { createSidebarItem } from "./render/createSidebarItem"
@@ -11,6 +12,7 @@ import { Slider } from "./slider/slider"
 
 async function init(): Promise<void> {
   await initUserMenu()
+  initDonationModal()
   initSignIn()
   initRegister()
   loadPets()
