@@ -106,7 +106,7 @@ export function initRegister(): void {
         email: email.value
       })
 
-      window.location.href = "/pages/signin/signin.html"
+      window.location.href = "./pages/signin/signin.html"
 
     } catch (error) {
 
