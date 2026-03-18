@@ -121,17 +121,11 @@ body {
 .hidden-popup{
   display: none;
 }
-
-/* .form-group input.error {
-  border: 2px solid red;
-}
-
 .error-message {
   color: red;
   font-size: 14px;
   min-height: 18px;
-} */
-
+}
 .auth.container {
   display: flex;
   flex-direction: column;
