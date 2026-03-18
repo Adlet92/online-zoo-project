@@ -200,7 +200,6 @@ function showSuccess(message: string) {
     closeDonationModal()
   }
 
-  // auto-close after 3 seconds
   setTimeout(() => {
     closeDonationModal()
   }, 3000)
