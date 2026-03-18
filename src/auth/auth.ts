@@ -76,9 +76,6 @@ export async function loginUser(data: {
     throw new Error("Incorrect login or password")
   }
   const result = await response.json()
-  console.log("LOGIN DATA:", result.data)
-  console.log("LOGIN user:", result.data.user)
-
   localStorage.setItem("token", result.data.access_token)
 
   return result

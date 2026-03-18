@@ -14,7 +14,6 @@ export async function initStep2() {
 
   nextBtn.disabled = true
 
-  // Load existing values from state if available
   if (state.name) nameInput.value = state.name
   if (state.email) emailInput.value = state.email
 
@@ -34,7 +33,6 @@ export async function initStep2() {
   nameInput.addEventListener('input', validateStep2)
   emailInput.addEventListener('input', validateStep2)
 
-  // Update state on blur to ensure data is saved
   nameInput.addEventListener('blur', () => {
     state.name = nameInput.value.trim()
   })

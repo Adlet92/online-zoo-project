@@ -139,8 +139,6 @@ export function initStep3() {
       saveCard: state.saveCard
      }
 
-    console.log("Submitting donation:", payload)
-
     try {
       const response = await fetch(`${BASE_URL}/donations`, {
         method: 'POST',
@@ -149,10 +147,7 @@ export function initStep3() {
       })
 
       const data = await response.json().catch(() => null)
-      console.log("Response status:", response.status)
-      console.log("Response data:", data)
 
-    // ❗ handle API error message
       if (!response.ok) {
           throw new Error(
             data?.error ||
@@ -160,8 +155,6 @@ export function initStep3() {
             `Server error (${response.status})`
           )
         }
-
-      // if (!response.ok) throw new Error()
 
       if (state.saveCard) {
         saveCard({
@@ -171,9 +164,6 @@ export function initStep3() {
         })
       }
 
-      // showNotification(
-      //   `Thank you for your donation of $${state.amount} to ${state.pet}!`
-      // )
       showSuccess(
         data?.data?.message ||
         `Thank you for your donation of $${state.amount} to ${state.pet?.name}!`

@@ -37,25 +37,13 @@ export function initDonationModal() {
     steps[index].classList.add('active')
 
     currentStep = index
-    // if (index === 0) initStep1()
-    // if (index === 1) initStep2()
-    // if (index === 2) initStep3()
   }
   initStep1()
 
-  // nextBtns.forEach(btn => {
-  //   btn.addEventListener('click', () => {
-  //     if (currentStep < steps.length - 1) {
-  //       showStep(currentStep + 1)
-  //     }
-  //   })
-  // })
   nextBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       if (currentStep < steps.length - 1) {
-        // Before moving to next step, ensure current step's data is saved
         if (currentStep === 1) {
-          // Double-check step 2 data before proceeding
           const nameInput = document.querySelector('.name-input') as HTMLInputElement
           const emailInput = document.querySelector('.email-input') as HTMLInputElement
 
@@ -66,28 +54,16 @@ export function initDonationModal() {
         }
 
         showStep(currentStep + 1)
-
-        // Initialize the next step
         if (currentStep === 1) initStep2()
         if (currentStep === 2) initStep3()
       }
     })
   })
 
-
-  // backBtns.forEach(btn => {
-  //   btn.addEventListener('click', () => {
-  //     if (currentStep > 0) {
-  //       showStep(currentStep - 1)
-  //     }
-  //   })
-  // })
   backBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       if (currentStep > 0) {
         showStep(currentStep - 1)
-
-        // Re-initialize the step when going back
         if (currentStep === 0) initStep1()
         if (currentStep === 1) initStep2()
       }
