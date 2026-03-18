@@ -91,40 +91,97 @@ body {
 .user-button {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: none;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: transparent;
   border: none;
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-button:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .user-button img {
-  width: 100%;
+  width: 36px;
   height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#userName {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  color: #20113D;
 }
 
 .user-popup {
   position: absolute;
+  top: 55px;
   right: 0;
-  top: 50px;
-  background: white;
-  border-radius: 8px;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 10px;
   padding: 15px;
-  min-width: 180px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.2s ease;
 }
 
-.user-popup button,
-.user-popup a {
-  display: block;
-  width: 100%;
-  margin-bottom: 8px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.user-popup p {
+  font-size: 14px;
+  color: #333;
 }
-.hidden-popup{
+
+.user-popup a {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #20113D;
+  transition: background 0.2s ease;
+}
+
+.user-popup a:hover {
+  background: #f5f5f5;
+}
+
+.user-popup button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #F58021;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-popup button:hover {
+  background: #d96d1c;
+}
+
+.hidden-popup {
   display: none;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .live{
   display: flex;
   gap: 40px;
