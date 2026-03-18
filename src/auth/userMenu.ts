@@ -26,8 +26,8 @@ export async function initUserMenu(): Promise<void> {
   } else {
 
     popup.innerHTML = `
-      <a href="./pages/signin/signin">Sign In</a>
-      <a href="./pages/register/register">Registration</a>
+      <a href="./pages/signin/signin.html">Sign In</a>
+      <a href="./pages/register/register.html">Registration</a>
     `
   }
 
